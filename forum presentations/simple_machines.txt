@@ -6,7 +6,7 @@
 [center][size=20pt][font=Arial]"WE PUT REAL STEAM INTO COINS"[/font][/size][/center]
 
 
-[center][size=20pt][font=Verdana][shadow=red,left]Website[/shadow][/font][/size][/center]
+[center][size=20pt][font=Verdana]Website[/font][/size][/center]
 [center][size=15pt][font=Verdana]www.Machinecoin.org[/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Algorithm[/font][/size][/center]
