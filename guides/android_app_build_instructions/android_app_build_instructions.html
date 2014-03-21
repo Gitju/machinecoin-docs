@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+</head>
+
+<body>
+    <p style="text-align: justify;">1.&nbsp;Download and Install&nbsp;<a href=
+    "https://www.virtualbox.org/wiki/Downloads" title=
+    "VirtualBox">VirtualBox</a>&nbsp;and the&nbsp;<a href=
+    "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
+    Pack</a>.</p>
+
+    <p style="text-align: justify;">2.&nbsp;Download the&nbsp;iDienstlerbox
+    which is a ready to use GNU/Linux Debian 7.2 VirtualBox Appliance and
+    import the iDienstlerbox into VirtualBox.</p><a href=
+    "./Bildschirmfoto-2014-02-12-um-20.05.03.png"><img alt=""
+    class="alignnone size-full wp-image-285" height="99" src=
+    "./Bildschirmfoto-2014-02-12-um-20.05.03.png"
+    width="320"></a>
+
+    <p style="text-align: justify;">I suggest to change the Name to something
+    that is easier to remember and to select the request of a new network
+    address for your new virtual machine.</p><a href=
+    "./Bildschirmfoto-2014-02-12-um-20.07.51-e1392232109220.png"><img alt=""
+    class="alignnone size-full wp-image-286" height="510" src=
+    "./Bildschirmfoto-2014-02-12-um-20.07.51-e1392232109220.png"
+    width="600"></a>
+
+    <p style="text-align: justify;">3.&nbsp;Start your new virtual machine,
+    login with the following credentials:</p><a href=
+    "http://idienstler.de/wp-content/uploads/idienstlerbox1_23.ova" title=
+    "Download the iDienstlerbox">iDienstlerbox v1.2.3</a> (user: root,
+    password: i123123) SHA1:&nbsp;ff20138609265f784ec411170dd881c7b7fbf1c6
+
+    <p style="text-align: justify;">4. Open up a terminal and enter the
+    following commands:</p>
+    <pre>
+$dpkg --add-architecture i386
+$apt-get update &amp;&amp; apt-get dist-upgrade
+$apt-get install git openjdk-7-jdk
+$apt-get install ia32-libs
+</pre>
+
+    <p style="text-align: justify;">5. Select OpenJDK 7 to be the standard JDK
+    on the system by entering the following command and then select the number
+    which fits to OpenJDK 7:</p>
+    <pre>
+$/usr/sbin/update-alternatives --config java
+</pre>
+
+    <p style="text-align: justify;">6. Download <a href=
+    "http://mirror.dkd.de/apache/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz">
+    Maven 3.1.1</a>&nbsp;and unpack it somewhere on your local computer
+    using:</p>
+    <pre>
+tar zxvf apache-maven-3.1.1-bin.tar.gz
+</pre>
+
+    <p style="text-align: justify;">7. Add the bin directory of Maven to your
+    PATH:</p>
+    <pre>
+export M2_HOME="/root/Downloads/apache-maven-3.1.1"
+export PATH=$PATH:$M2_HOME/bin
+</pre>
+
+    <p style="text-align: justify;">8. Download of the <a href=
+    "http://dl.google.com/android/android-sdk_r22.3-linux.tgz">Android SDK
+    Tools</a>&nbsp;and enter the following commands:</p>
+    <pre>
+$cd ~/Dokumente/android-sdk-linux/tools
+$./android update sdk --no-ui --force --filter platform,platform-tools
+$android update sdk -u
+$android update sdk --no-ui --obsolete --force
+</pre>
+
+    <p style="text-align: justify;">9. Clone the 2 projects bitcoinj and
+    bitcoin-wallet:</p>
+    <pre>
+$cd ~/Dokumente
+$git clone https://github.com/Gitju/bitcoinj
+$git clone https://github.com/Gitju/bitcoin-wallet
+</pre>
+
+    <p style="text-align: justify;">10. Compile bitcoinj:</p>
+    <pre>
+$cd ~/Dokumente/bitcoinj
+$mvn clean install -DskipTests
+</pre>
+
+    <p style="text-align: justify;">11. Download IntelliJ IDEA 13 Community
+    Edition and unpack it. After you have done this open up a terminal and
+    change with that terminal into the bin directory of IntelliJ IDEA 13 and
+    start the "idea.sh" file:</p>
+    <pre>
+$cd ~/Downloads/idea-IC-133.696/bin
+$./idea.sh
+</pre>
+
+    <p style="text-align: justify;">12. Import the wallet into IntelliJ IDEA 13
+    with a click on "Import Project".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.11.11-e1392390791197.png">
+    <img alt="" class="alignnone size-full wp-image-315" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.11.11-e1392390791197.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">Choose the pom.xml of the wallet and click
+    on "OK".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.13.53-e1392390897764.png">
+    <img alt="" class="alignnone size-full wp-image-316" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.13.53-e1392390897764.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">In the next step just have a look at the
+    settings and if they are okay click on "Next".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.15.27-e1392390982728.png">
+    <img alt="" class="alignnone size-full wp-image-317" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.15.27-e1392390982728.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">Also in the next step just click on
+    "Next".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.16.42-e1392391090423.png">
+    <img alt="" class="alignnone size-full wp-image-318" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.16.42-e1392391090423.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">The OpenJDK 7 should be selected in this
+    step. Have a look at the screenshot how the result should look like.</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.18.19-e1392391189334.png">
+    <img alt="" class="alignnone size-full wp-image-319" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.18.19-e1392391189334.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">In the last step of the import choose a
+    nice project name like "machinecoin-android-wallet" and also setup a
+    project file location. Here I used
+    "/root/Dokumente/machinecoin-android-wallet". Click on "Finish" if you are
+    ready.</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.21.16-e1392391394368.png">
+    <img alt="" class="alignnone size-full wp-image-320" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.21.16-e1392391394368.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">13. Now its time to do all the steps that
+    are&nbsp;necessary to be able to compile the wallet for the very first
+    time. At first lets have a look at the dashboard that you'll see right
+    after the import. On the top right appears a message where you should click
+    on "Enable Auto-Import".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.26.16-e1392391660129.png">
+    <img alt="" class="alignnone size-full wp-image-321" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.26.16-e1392391660129.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">Do a click on "Run" &gt; "Edit
+    Configurations..." in the Menu. In the next screen click on the "+" and
+    choose "Maven".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.32.02-e1392391973446.png">
+    <img alt="" class="alignnone size-full wp-image-322" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.32.02-e1392391973446.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.33.50-e1392392093731.png">
+    <img alt="" class="alignnone size-full wp-image-323" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.33.50-e1392392093731.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.34.02-e1392392103948.png">
+    <img alt="" class="alignnone size-full wp-image-324" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.34.02-e1392392103948.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">In the tab "Parameters" set a name, the
+    working directory and the entry for the command line.</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.36.48-e1392392322284.png">
+    <img alt="" class="alignnone size-full wp-image-325" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.36.48-e1392392322284.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">In the tab "General" unselect "Use project
+    settings", select "Override" for the Maven &nbsp;home directory and
+    enter/select the path to your local Maven home directory.</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.39.42-e1392392715409.png">
+    <img alt="" class="alignnone size-full wp-image-326" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.39.42-e1392392715409.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">In the "Runner" tab unselect "Use project
+    settings" and click on the edit button for "Environment variables".
+    &nbsp;After that insert a new entry into the environment variables with the
+    Name ANDROID_HOME and as the value the path to your Android SDK for example
+    /root/Downloads/android-sdk-linux/. Click on "OK" and again on "OK".</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.43.08-e1392392794958.png">
+    <img alt="" class="alignnone size-full wp-image-327" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.43.08-e1392392794958.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-16.44.00-e1392392804723.png">
+    <img alt="" class="alignnone size-full wp-image-328" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-16.44.00-e1392392804723.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">14. Prepare the signing of the app</p>
+
+    <p style="text-align: justify;">Just click on "Build" &gt; "Generate signed
+    apk..." in the menu and&nbsp;create a new keystore under the key store path
+    ~/.machinecoinkeystore/keystore.jks&nbsp;<a href=
+    "https://github.com/Gitju/bitcoin-wallet/issues/1">For the username use
+    "android" and for the password "androidpassword"</a>.</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-17.02.10-e1392415572150.png">
+    <img alt="" class="alignnone size-full wp-image-330" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-17.02.10-e1392415572150.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-17.02.27-e1392415584774.png">
+    <img alt="Bildschirmfoto 2014-02-14 um 17.02.27" class=
+    "alignnone size-full wp-image-331" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-17.02.27-e1392415584774.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-17.02.32-e1392415593408.png">
+    <img alt="" class="alignnone size-full wp-image-332" height="488" src=
+    "./Bildschirmfoto-2014-02-14-um-17.02.32-e1392415593408.png"
+    width="600"></a></p>
+
+    <p style="text-align: justify;">15. Create the checkpintfile</p>
+    <pre>
+root@debian:~/Dokumente/bitcoinj/tools# mvn exec:java -Dexec.mainClass=com.google.bitcoin.tools.BuildCheckpoints
+</pre>
+
+    <p style="text-align: justify;">16. Build the app</p>
+
+    <p style="text-align: justify;">Just hit the "Build" button and you can
+    upload the generated apk to your phone or an android emulator. Don't forget
+    to allow the install of apps outside of the play store.</p>
+
+    <p style="text-align: justify;"><a href=
+    "./Bildschirmfoto-2014-02-14-um-23.11.00.png">
+    <img alt="" class="alignnone size-full wp-image-333" height="43" src=
+    "./Bildschirmfoto-2014-02-14-um-23.11.00.png"
+    width="119"></a></p>
+
+    <p style="text-align: justify;">17. Further information</p>
+
+    <p style="text-align: justify;">You should connect to nodes that uses a
+    high value for the maxsendbuffer.</p>
+    <pre>
+rpcuser=&lt;rpcusername&gt;
+rpcpassword=&lt;rpcpassword&gt;
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+disablewallet=1
+maxconnections=500
+#bloomfilter
+bloomfilters=1
+#maxsendbuffer
+maxsendbuffer=256000
+#maxreceivebuffer
+maxreceivebuffer=256000
+</pre>
+</body>
+</html>
