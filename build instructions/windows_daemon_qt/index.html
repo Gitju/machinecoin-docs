@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Windows Daemon Qt Build Instructions</title>
+</head>
+
+<body>
+    <h1>Get started with compiling the Machinecoin-Qt and the
+    Machinecoin-Daemon for Windows 64-bit:</h1>
+
+    <ol>
+        <li>Download and Install <a href=
+        "https://www.virtualbox.org/wiki/Downloads" title=
+        "VirtualBox">VirtualBox</a> and the <a href=
+        "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
+        Pack</a>.</li>
+
+        <li>Download <a href=
+        "http://technet.microsoft.com/de-de/evalcenter/hh670538.aspx">Windows
+        Server 2012</a> .iso from Microsoft which is the server version of
+        windows 8.</li>
+
+        <li>Start VirtualBox and create a new virtual machine based on Windows
+        Server 2012.</li>
+
+        <li>Boot into your new Windows 2012 virtual machine and
+        download/install the <a href=
+        "http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">
+        MinGW Installation Manager</a> to "C:\MinGW"</li>
+
+        <li>After starting the MinGW Installation Manager select the packages
+        inside "Basic Setup" to install and install them.</li>
+
+        <li>Download and install <a href=
+        "http://downloads.activestate.com/ActivePerl/releases/5.18.1.1800/ActivePerl-5.18.1.1800-MSWin32-x64-297570.msi">
+        Perl</a> to "C:\Perl64"</li>
+
+        <li>Download and install <a href=
+        "http://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64.msi">Python</a>
+        to "C:\Python33"</li>
+
+        <li>Install GCC from the MinGW-builds project by downloading <a href=
+        "http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.8.2/threads-posix/dwarf/i686-4.8.2-release-posix-dwarf-rt_v3-rev2.7z/download">
+        this file</a> and unpack it to "C:\mingw32\" so that it looks like the
+        following screenshot: <p> 
+        <a href=
+        "Bildschirmfoto-2014-02-06-um-11.48.34-e1391683757287.png">
+        <img alt="" class="alignnone size-full wp-image-229" height="488" src=
+        "Bildschirmfoto-2014-02-06-um-11.48.34-e1391683757287.png"
+        width="600"></a></p></li>
+
+        <li>Create a directory called "deps" under "C:\".</li>
+
+        <li>Create a directory called "Qt" under "C:\".</li>
+
+        <li>Download and unpack Qt 4.8.5 to "C:\Qt\" so that it looks like the
+        following screenshot: <p><a href=
+        "Bildschirmfoto-2014-02-06-um-11.46.21-e1391683604111.png">
+        <img alt="" class="alignnone size-full wp-image-228" height="488" src=
+        "Bildschirmfoto-2014-02-06-um-11.46.21-e1391683604111.png"
+        width="600"></a></p></li>
+
+        <li>Add the path to Qt-bin, mingw32-bin, Python33, Perl64-site,
+        Perl64-bin to your PATH-environment just like on the following
+        screenshot: <p><a href=
+        "Bildschirmfoto-2014-02-06-um-11.53.12-e1391684011581.png">
+        <img alt="" class="alignnone size-full wp-image-230" height="488" src=
+        "Bildschirmfoto-2014-02-06-um-11.53.12-e1391684011581.png"
+        width="600"></a></p></li>
+
+        <li>Download and do not unpack <a href=
+        "http://www.openssl.org/source/openssl-1.0.1e.tar.gz">OpenSSL
+        1.0.1e</a> to "C:\deps\".</li>
+
+        <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and
+        unpack the OpenSSL 1.0.1e .tar-file using the MinGW-Shell to preserve
+        symlinks. Then start the compilation of OpenSSL 1.0.1e.
+            <pre class="brush: bash; gutter: false">
+cd /c/deps/
+tar xvfz openssl-1.0.1e.tar.gz
+cd openssl-1.0.1e
+Configure mingw
+make
+</pre>
+        </li>
+
+        <li>Download and do not unpack <a href=
+        "http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz">Berkeley
+        DB 4.8.30.NC</a> to "C:\deps\".</li>
+
+        <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and
+        unpack the Berkeley DB 4.8.30 .tar-file using the MinGW-Shell to
+        preserve symlinks. Then start the compilation of Berkeley DB 4.8.30.NC.
+            <pre class="brush: bash; gutter: false">
+cd /c/deps/
+tar xvfz db-4.8.30.NC.tar.gz
+cd db-4.8.30.NC/build_unix
+../dist/configure --disable-replication --enable-mingw --enable-cxx
+make
+</pre>
+        </li>
+
+        <li>Download and unpack <a href=
+        "http://sourceforge.net/projects/boost/files/boost/1.54.0/boost_1_54_0.tar.gz/download">
+        Boost 1.54</a> to "C:\deps\".</li>
+
+        <li>Start the compilation of Boost 1.54.
+            <pre class="brush: bash; gutter: false">
+cd C:\deps\boost_1_54_0\
+bootstrap.bat mingw
+b2 --build-type=complete --with-chrono --with-filesystem --with-program_options --with-system --with-thread toolset=gcc stage
+</pre>
+        </li>
+
+        <li>Download and unpack <a href=
+        "http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.8.tar.gz">Miniupnpc</a>
+        to "C:\deps\". Rename the folder from "miniupnpc-1.8" to
+        "miniupnpc".</li>
+
+        <li>Start the compilation of Miniupnpc.
+            <pre class="brush: bash; gutter: false">
+cd C:\deps\miniupnpc
+mingw32-make -f Makefile.mingw init upnpc-static
+</pre>
+        </li>
+
+        <li>Download and unpack <a href=
+        "https://github.com/Gitju/machinecoin/archive/master.zip">Machinecoin</a>
+        to "C:\machinecoin\".</li>
+
+        <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and then
+        start the compilation of leveldb.
+            <pre class="brush: bash; gutter: false">
+cd /C/machinecoin/src/leveldb
+TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
+</pre>
+        </li>
+
+        <li>Edit "C:\machinecoin\src\makefile.mingw" changing BOOST_SUFFIX,
+        INCLUDEPATHS and LIBPATHS and adding -static option to LDFLAGS just
+        like the following diff shows:
+            <pre class="brush: text; gutter: false">
+  DEPSDIR?=/usr/local
+- BOOST_SUFFIX?=-mgw46-mt-sd-1_52
++ BOOST_SUFFIX?=-mgw48-mt-s-1_54
+
+  INCLUDEPATHS= \
+  -I"$(CURDIR)" \
+- -I"$(DEPSDIR)/include"
++ -I"c:/deps/boost_1_54_0" \
++ -I"c:/deps/db-4.8.30.NC/build_unix" \ 
++ -I"c:/deps/openssl-1.0.1e/include"
+
+  LIBPATHS= \
+  -L"$(CURDIR)/leveldb" \
+- -L"$(DEPSDIR)/lib"
++ -L"c:/deps/boost_1_54_0/stage/lib" \
++ -L"c:/deps/db-4.8.30.NC/build_unix" \
++ -L"c:/deps/openssl-1.0.1e"
+
+  # enable: ASLR, DEP and large address aware
+- LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware
++ LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static
+</pre>
+        </li>
+
+        <li>Start the compilation of the Machinecoin-Daemon.
+            <pre class="brush: bash; gutter: false">
+cd C:\machinecoin\src
+mingw32-make -f makefile.mingw
+strip machinecoind.exe
+</pre>
+        </li>
+
+        <li>Edit "C:\machinecoin\machinecoin-qt.pro" just like the following
+        diff is showing:
+            <pre class="brush: text; gutter: false">
+  CONFIG += thread
++ CONFIG += static
+
+  #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
++ 
++ BOOST_LIB_SUFFIX=-mgw48-mt-s-1_54
++ BOOST_INCLUDE_PATH=C:/deps/boost_1_54_0
++ BOOST_LIB_PATH=C:/deps/boost_1_54_0/stage/lib
++ BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
++ BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
++ OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1e/include
++ OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1e
++ MINIUPNPC_INCLUDE_PATH=C:/deps/
++ MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+
+  # on Windows: enable GCC large address aware linker flag
+- win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
++ win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
+
+  } else {
+      # make an educated guess about what the ranlib command is called
+      isEmpty(QMAKE_RANLIB) {
+          QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
+      }
+      LIBS += -lshlwapi
+-     genleveldb.commands = cd $$PWD/src/leveldb &amp;&amp; CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a &amp;&amp; $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a &amp;&amp; $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
++     # genleveldb.commands = cd $$PWD/src/leveldb &amp;&amp; CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT="$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE" libleveldb.a libmemenv.a &amp;&amp; $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a &amp;&amp; $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+</pre>
+        </li>
+
+        <li>Start the compilation of the Machinecoin-Qt.
+            <pre class="brush: bash; gutter: false">
+cd C:\machinecoin\
+qmake machinecoin-qt.pro
+mingw32-make -f Makefile.Release
+</pre>
+        </li>
+
+        <li>Start "machinecoin-qt.exe" with a click on your mouse and close it
+        again after the very first start.</li>
+
+        <li>Create a textfile with notepad with the following content
+            <pre class="brush: text; gutter: false">
+rpcuser=&lt;rpcusername&gt;
+rpcpassword=&lt;rpcpassword&gt;
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+</pre>
+        </li>
+
+        <li>Save the textfile to
+        "C:\Users\<em>&lt;Username&gt;</em>\AppData\Roaming\Machinecoin\machinecoin.conf"</li>
+
+        <li>Start "machinecoin-qt.exe" with a click on your mouse</li>
+    </ol>
+</body>
+</html>
