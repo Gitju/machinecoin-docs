@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Mac OS X Daemon Qt Build Instructions</title>
+</head>
+
+<body>
+    <h1>Get started with compiling the Machinecoin-Qt and the
+    Machinecoin-Daemon for Mac OS X 10.9 Mavericks:</h1>
+
+    <ol>
+        <li>You need a Mac and Mac OS X 10.9 Mavericks installed on it. If you
+        got both open up the Apple App Store on that Mac and search for
+        "Mavericks".</li>
+
+        <li>Download Mavericks from the Apple App Store to your Mac.</li>
+
+        <li>Open up a terminal and type in the following commands:
+            <pre>
+hdiutil attach /Applications/Install\ OS\ X\ Mavericks.app/Contents/SharedSupport/InstallESD.dmg -noverify -nobrowse -mountpoint /Volumes/install_app
+hdiutil convert /Volumes/install_app/BaseSystem.dmg -format UDSP -o /tmp/Mavericks
+hdiutil resize -size 8g /tmp/Mavericks.sparseimage
+hdiutil attach /tmp/Mavericks.sparseimage -noverify -nobrowse -mountpoint /Volumes/install_build
+rm /Volumes/install_build/System/Installation/Packages
+cp -rp /Volumes/install_app/Packages /Volumes/install_build/System/Installation/
+hdiutil detach /Volumes/install_app
+hdiutil detach /Volumes/install_build
+hdiutil resize -size `hdiutil resize -limits /tmp/Mavericks.sparseimage | tail -n 1 | awk '{ print $1 }'`b /tmp/Mavericks.sparseimage
+hdiutil convert /tmp/Mavericks.sparseimage -format UDTO -o /tmp/Mavericks
+rm /tmp/Mavericks.sparseimage
+mv /tmp/Mavericks.cdr ~/Desktop/Mavericks.iso
+</pre>
+        </li>
+
+        <li>Download and Install <a href=
+        "https://www.virtualbox.org/wiki/Downloads" title=
+        "VirtualBox">VirtualBox</a> and the <a href=
+        "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
+        Pack</a>.</li>
+
+        <li>Start VirtualBox and create a new virtual machine with the same
+        settings as you can see in the following screenshot:
+
+            <p><a href=
+            "Bildschirmfoto-2014-02-05-um-16.20.41-e1391613707587.png"><img alt=""
+            height="510" src=
+            "Bildschirmfoto-2014-02-05-um-16.20.41-e1391613707587.png" width=
+            "600"></a></p>
+
+            <p><a href=
+            "Bildschirmfoto-2014-02-05-um-16.22.42-e1391613792114.png"><img alt=""
+            height="510" src=
+            "Bildschirmfoto-2014-02-05-um-16.22.42-e1391613792114.png" width=
+            "600"></a></p>
+        </li>
+
+        <li>Now go to the settings for the hard-/ and optical-drives and and
+        click on the empty disc on the left side. After this click on the
+        little cd on the right side and choose the Mac OS X 10.9 Mavericks .iso
+        that you have created in the steps before.
+
+            <p><a href=
+            "Bildschirmfoto-2014-02-05-um-16.24.05-e1391613921471.png"><img alt=""
+            height="436" src=
+            "Bildschirmfoto-2014-02-05-um-16.24.05-e1391613921471.png" width=
+            "600"></a></p>
+
+            <p><a href=
+            "Bildschirmfoto-2014-02-05-um-16.26.44-e1391614036241.png"><img alt=""
+            height="358" src=
+            "Bildschirmfoto-2014-02-05-um-16.26.44-e1391614036241.png" width=
+            "600"></a></p>
+        </li>
+
+        <li>Start your new virtual machine until you can see the installer.
+        Select your favourite language and when you come to the screen where
+        you have to choose the right harddrive where you want to install Mac OS
+        X 10.9 Mavericks you will see no drive. But don't worry this is normal
+        just click in the menu on "Utilitys" &gt; "Disc Utility". Select the
+        virtual hard drive that you have create on the left side and on the
+        right side click on the tab with the name "Erase". Type in a name for
+        your hard drive an click on the button with the name "Erase".
+
+            <p><a href=
+            "Bildschirmfoto-2014-02-05-um-16.31.57-e1391614472326.png"><img alt=""
+            height="523" src=
+            "Bildschirmfoto-2014-02-05-um-16.31.57-e1391614472326.png" width=
+            "600"></a></p>
+        </li>
+
+        <li>Now continue the rest of the installation process just as you had
+        installed Mac OS X 10.9 on your own Mac.</li>
+
+        <li>Now we configure your new Mac OS X 10.9 to be able to compile the
+        sourcecode. At first you'll have to download and install Xcode from the
+        Apple App Store.</li>
+
+        <li>Next we'll install the Xcode Command Line Tools. Open up a terminal
+        and type in:
+            <pre>
+xcode-select --install
+</pre>
+        </li>
+
+        <li>Download and install <a href=
+        "http://www.macports.org/install.php">MacPorts</a>.</li>
+
+        <li>Open up a terminal and type in the following command to install the
+        necessary dependencys:
+            <pre>
+sudo /opt/local/bin/port install boost db48 qt4-mac openssl miniupnpc
+</pre>
+        </li>
+
+        <li>Now we will clone the Machinecoin source code from GitHub. Open up
+        a terminal and type in the following commands:
+            <pre>
+git clone https://github.com/Gitju/machinecoin.git
+</pre>
+        </li>
+
+        <li>We open "makefile.osx" and uncomment a line because of some changes
+        in osx 10.9. The result should look like the following:
+            <pre>
+# CFLAGS += -stdlib=libstdc++
+</pre>
+        </li>
+
+        <li>Next navigate with the terminal to the "machinecoin/src" folder and
+        compile the Machinecoin-Daemon with the following command:
+            <pre>
+make -f makefile.osx USE_UPNP=-
+</pre>
+        </li>
+
+        <li>To make the file smaller we can strip it with the following
+        command:
+            <pre>
+strip machinecoind
+</pre>
+        </li>
+
+        <li>To create the Machinecoin-Qt navigate into the "machinecoin" folder
+        and type in the following command:
+            <pre>
+qmake "USE_UPNP=-" machinecoin-qt.pro
+</pre>and
+            <pre>
+make -f Makefile
+</pre>
+        </li>
+
+        <li>Now start the new compiled "Machinecoin-Qt" with a click on your
+        mouse and close it again after the very first start. Next enter the
+        following command in a terminal:
+            <pre class="brush: bash; gutter: false">
+$vi /Users/&lt;Username&gt;/Library/"Application Support"/Machinecoin/machinecoin.conf
+</pre>When the config-file opens up just insert the following lines into the
+config-file and hit the save button. Don't forget to change &lt;rpcusername&gt;
+and &lt;rpcpassword&gt;.
+            <pre class="brush: text; gutter: false">
+rpcuser=&lt;rpcusername&gt;
+rpcpassword=&lt;rpcpassword&gt;
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+</pre>Now start Machinecoin by clicking on the file "Machinecoin-Qt".
+        </li>
+    </ol>
+</body>
+</html>
