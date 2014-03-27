@@ -7,7 +7,7 @@
 [align=center][font=Verdana][size=large][url=http://www.Machinecoin.org]www.Machinecoin.org[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Algorithm[/size][/font][/align]
-[align=center][font=Verdana][size=large]scrypt[/size][/font][/align]
+[align=center][font=Verdana][size=large]Scrypt[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Currency[/size][/font][/align]
 [align=center][font=Verdana][size=large]MAC[/size][/font][/align]
