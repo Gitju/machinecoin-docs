@@ -20,7 +20,7 @@
 [align=center][font=Verdana][size=large]2016 blocks to retarget difficulty[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/showthread.php?tid=9]Machinecoin Android Wallet[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Android Wallet[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Windows Wallet[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Linux Wallet Build Instructions[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Mac OS X Wallet Build Instructions[/url][/size][/font][/align]
@@ -63,6 +63,7 @@ rpcallowip=127.0.0.1[/code][/align]
 
 [align=center][font=Verdana][size=x-large]Forums[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk]Bitcointalk[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://bitcoingarden.tk/forum/index.php?topic=35.0]Bitcoingarden[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://cryptocointalk.com/topic/3697-machinecoin-mac-information/]Cryptocointalk[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://forum.idienstler.de/forumdisplay.php?fid=24]iDienstler[/url][/size][/font][/align]
@@ -79,4 +80,4 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Wallet[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Support Machinecoin[/size][/font][/align]
-[align=center][font=Verdana][size=large]Donate MAC to MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/showthread.php?tid=126]Donate to the Machinecoin Developer Team[/url][/size][/font][/align]
