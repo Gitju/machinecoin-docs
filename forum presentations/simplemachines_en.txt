@@ -58,8 +58,8 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=http://mycrypto.de/]MyCrypto[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Exchanges[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://cryptotc.us/market#MAC]Cryptotc[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Vote here for Cryptsy[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=http://cryptotc.us/market#MAC]SwapHole[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]IRC[/font][/size][/center]
 [center][size=15pt][font=Verdana]irc.machinecoin.org:6667 #machinecoin[/font][/size][/center]
@@ -77,7 +77,7 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=https://twitter.com/machinecoin]Twitter[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Tutorial Videos[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Machinecoin Tutorial Video[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Trailer[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Wallet[/url][/font][/size][/center]
