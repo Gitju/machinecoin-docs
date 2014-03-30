@@ -59,15 +59,13 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 
 [center][size=20pt][font=Verdana]Exchanges[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://cryptotc.us/market#MAC]SwapHole[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=http://swaphole.com]SwapHole[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]IRC[/font][/size][/center]
 [center][size=15pt][font=Verdana]irc.machinecoin.org:6667 #machinecoin[/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Forums[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://bitcoingarden.tk/forum/index.php?topic=35.0]Bitcoingarden[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://cryptocointalk.com/topic/3697-machinecoin-mac-information/]Cryptocointalk[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=https://bitcointalk.org/index.php?topic=522568.msg5785088#msg5785088]Bitcointalk[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://forum.idienstler.de/forumdisplay.php?fid=24]iDienstler[/url][/font][/size][/center]
 
