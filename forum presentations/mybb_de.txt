@@ -1,0 +1,81 @@
+[align=center][img]http://i58.tinypic.com/2i70479.png[/img][/align]
+
+[align=center][font=Arial][size=xx-large]MACHINECOIN[/size][/font][/align]
+[align=center][font=Arial][size=x-large]"WIR MACHEN MÜNZEN (MIT) DAMPF"[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Webseite[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://www.Machinecoin.org]www.Machinecoin.org[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Algorithmus[/size][/font][/align]
+[align=center][font=Verdana][size=large]Scrypt[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Währung[/size][/font][/align]
+[align=center][font=Verdana][size=large]MAC[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Spezifikationen[/size][/font][/align]
+[align=center][font=Verdana][size=large]2,5 Minuten Blockziel[/size][/font][/align]
+[align=center][font=Verdana][size=large]Ausschüttung halbiert sich nach jeweils 840 Tsd. Blöcken (~ 4 Jahre)[/size][/font][/align]
+[align=center][font=Verdana][size=large]maximal ~ 84 Millionen Münzen[/size][/font][/align]
+[align=center][font=Verdana][size=large]50 Münzen pro Block[/size][/font][/align]
+[align=center][font=Verdana][size=large]Schwierigkeitsrekalibrierung nach jeweils 2016 Blöcken[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Android Brieftasche[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Windows Brieftasche[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Linux Brieftasche Kompilierinstruktionen[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation/]Machinecoin Mac OS X Brieftasche Kompilierinstruktionen[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Konfiguration[/size][/font][/align]
+[align=center][code]rpcuser=<rpcusername>
+rpcpassword=<rpcpassword>
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1[/code][/align]
+
+[align=center][font=Verdana][size=x-large]Ports[/size][/font][/align]
+[align=center][font=Verdana][size=large]40332 RPC[/size][/font][/align]
+[align=center][font=Verdana][size=large]40333 P2P[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Blockchain Explorer[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://blockchain.machinecoin.org:8080]Machinecoin Blockchain Explorer[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Minen-Förderverbände[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.auxmining.de/]Auxmining[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://p2pool.neocities.org/coin_mac.html]The GoldMine P2Pool[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Minen-Fördersoftware[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://sourceforge.net/projects/cpuminer/files/]CpuMiner Windows, Linux, Mac OS X[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Akzeptanzstellen[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://mycrypto.de/]MyCrypto[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Wechselstuben[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.swaphole.com/]SwapHole[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]IRC[/size][/font][/align]
+[align=center][font=Verdana][size=large]irc.machinecoin.org:6667 #machinecoin[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Foren[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=522568.msg5785088#msg5785088]Bitcointalk[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/forumdisplay.php?fid=24]iDienstler[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Soziale Netzwerke[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://broadster.de/machinecoin?lang=en]Broadster[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://socialiter.de/index.php?a=profile&u=machinecoin&lang=english]Socialiter[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://twitter.com/machinecoin]Twitter[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Anleitungsvideos[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Trailer[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Brieftasche Trailer[/url][/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Unterstütze Machinecoin[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/showthread.php?tid=126]Spende an das Machinecoin Entwicklerteam[/url][/size][/font][/align]
