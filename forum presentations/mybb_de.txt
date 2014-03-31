@@ -1,7 +1,7 @@
 [align=center][img]http://i58.tinypic.com/2i70479.png[/img][/align]
 
 [align=center][font=Arial][size=xx-large]MACHINECOIN[/size][/font][/align]
-[align=center][font=Arial][size=x-large]"WIR MACHEN MÜNZEN (MIT) DAMPF"[/size][/font][/align]
+[align=center][font=Arial][size=x-large]"WIR MACHEN MÜNZEN MIT DAMPF"[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Webseite[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://www.Machinecoin.org]www.Machinecoin.org[/url][/size][/font][/align]
@@ -14,7 +14,7 @@
 
 [align=center][font=Verdana][size=x-large]Spezifikationen[/size][/font][/align]
 [align=center][font=Verdana][size=large]2,5 Minuten Blockziel[/size][/font][/align]
-[align=center][font=Verdana][size=large]Ausschüttung halbiert sich nach jeweils 840 Tsd. Blöcken (~ 4 Jahre)[/size][/font][/align]
+[align=center][font=Verdana][size=large]Ausschüttung halbiert sich nach jeweils 840 Tsd. Blöcken (~ alle 4 Jahre)[/size][/font][/align]
 [align=center][font=Verdana][size=large]maximal ~ 84 Millionen Münzen[/size][/font][/align]
 [align=center][font=Verdana][size=large]50 Münzen pro Block[/size][/font][/align]
 [align=center][font=Verdana][size=large]Schwierigkeitsrekalibrierung nach jeweils 2016 Blöcken[/size][/font][/align]
@@ -72,7 +72,7 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://twitter.com/machinecoin]Twitter[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Anleitungsvideos[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Machinecoins am PC erarbeiten[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Trailer[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Brieftasche Trailer[/url][/size][/font][/align]

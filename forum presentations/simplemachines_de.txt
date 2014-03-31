@@ -3,7 +3,7 @@
 [center][img]http://i58.tinypic.com/2i70479.png[/img][/center]
 
 [center][size=60pt][font=Arial]MACHINECOIN[/font][/size][/center]
-[center][size=20pt][font=Arial]"WIR MACHEN MÜNZEN (MIT) DAMPF"[/font][/size][/center]
+[center][size=20pt][font=Arial]"WIR MACHEN MÜNZEN MIT DAMPF"[/font][/size][/center]
 
 
 [center][size=20pt][font=Verdana]Webseite[/font][/size][/center]
@@ -17,7 +17,7 @@
 
 [center][size=20pt][font=Verdana]Spezifikationen[/font][/size][/center]
 [center][size=15pt][font=Verdana]2,5 Minuten Blockziel[/font][/size][/center]
-[center][size=15pt][font=Verdana]Ausschüttung halbiert sich nach jeweils 840 Tsd. Blöcken (~ 4 Jahre)[/font][/size][/center]
+[center][size=15pt][font=Verdana]Ausschüttung halbiert sich nach jeweils 840 Tsd. Blöcken (~ alle 4 Jahre)[/font][/size][/center]
 [center][size=15pt][font=Verdana]maximal ~ 84 Millionen Münzen[/font][/size][/center]
 [center][size=15pt][font=Verdana]50 Münzen pro Block[/font][/size][/center]
 [center][size=15pt][font=Verdana]Schwierigkeitsrekalibrierung nach jeweils 2016 Blöcken[/font][/size][/center]
@@ -75,10 +75,10 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=https://twitter.com/machinecoin]Twitter[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Anleitungsvideos[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Machinecoins am PC erarbeiten[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Trailer[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Wallet[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Brieftasche[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Unterstütze Machinecoin[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://forum.idienstler.de/showthread.php?tid=126]Spende an das Machinecoin Entwicklerteam[/url][/font][/size][/center]
