@@ -44,7 +44,7 @@ rpcallowip=127.0.0.1[/code][/align]
 
 [align=center][font=Verdana][size=x-large]Mining-Pools[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.auxmining.de/]Auxmining[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://p2pool.neocities.org/coin_mac.html]The GoldMine P2Pool[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://mac.talesfromthescrypt.org/]TalesFromTheScrypt[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Miner[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/size][/font][/align]
@@ -55,16 +55,15 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=http://mycrypto.de/]MyCrypto[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Exchanges[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.swaphole.com/]SwapHole[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]IRC[/size][/font][/align]
 [align=center][font=Verdana][size=large]irc.machinecoin.org:6667 #machinecoin[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Forums[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=552633.0]Bitcointalk[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/forumdisplay.php?fid=24]iDienstler[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=552633.0]Bitcointalk.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org]Machinecoin.org[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Social[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://broadster.de/machinecoin?lang=en]Broadster[/url][/size][/font][/align]
