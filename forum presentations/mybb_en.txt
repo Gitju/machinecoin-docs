@@ -77,4 +77,4 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Wallet[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Support Machinecoin[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/showthread.php?tid=126]Donate to the Machinecoin Developer Team[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org/showthread.php?tid=126]Donate to the Machinecoin Developer Team[/url][/size][/font][/align]

@@ -77,4 +77,4 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Brieftasche Trailer[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Unterstütze Machinecoin[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.idienstler.de/showthread.php?tid=126]Spende an das Machinecoin Entwicklerteam[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org/showthread.php?tid=126]Spende an das Machinecoin Entwicklerteam[/url][/size][/font][/align]
