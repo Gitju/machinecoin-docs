@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Linux Daemon Qt Build Instructions</title>
+    <title>Linux Machinecoin-Wallet and Machinecoin-Daemon Build Instructions</title>
 </head>
 
 <body>
-    <h1>Get started with compiling the Machinecoin-Qt and the
+    <h1>Get started with compiling the Machinecoin-Wallet and the
     Machinecoin-Daemon on GNU/Linux Debian 7.2:</h1><br>
+
+    <h2>Dynamically linked Machinecoin-Wallet and the Machinecoin-Daemon</h2><br>
 
     <ol>
         <li>Download and Install <a href=
@@ -18,17 +20,11 @@
         "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
         Pack</a>.</li>
 
-        <li>Download and import the VirtualBox Appliance <a href=
-        "http://idienstler.de/wp-content/uploads/idienstlerbox1_23.ova" title=
-        "Download the iDienstlerbox">iDienstlerbox v1.2.3</a> (user: root,
-        password: i123123) <span style="line-height: 1.5;">SHA1:
-        ff20138609265f784ec411170dd881c7b7fbf1c6</span> which is a ready to use
-        GNU/Linux Debian 7.2</li>
+        <li>Download and import a GNU/Linux Debian 7.2 VirtualBox
+        Appliance.</li>
 
-        <li>
-            <span style="line-height: 1.5;">Start your new virtual machine,
-            login with the credentials above, open up a terminal and enter the
-            following commands:</span>
+        <li>Start your new virtual machine, login and open up a terminal and
+        enter the following commands:
             <pre>
 $apt-get update &amp;&amp; apt-get upgrade
 $apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
@@ -44,7 +40,7 @@ $make -f Makefile
         <li>Now start the new compiled "machinecoin-qt" with a click on your
         mouse and close it again after the very first start. Next enter the
         following command in a terminal:
-            <pre class="brush: bash; gutter: false">
+            <pre>
 $vi ~/.machinecoin/machinecoin.conf
 </pre>When the config-file opens up just insert the following lines into the
 config-file and hit the save button. Don't forget to change &lt;rpcusername&gt;
@@ -63,6 +59,56 @@ rpcallowip=127.0.0.1
 
         <li>Now start Machinecoin by clicking on the file "machinecoin-qt"
         inside of ~/machinecoin/.</li>
+    </ol>
+
+    <h2>Statically linked Machinecoin-Daemon</h2><br>
+
+    <ol>
+        <li>Download and Install <a href=
+        "https://www.virtualbox.org/wiki/Downloads" title=
+        "VirtualBox">VirtualBox</a> and the <a href=
+        "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
+        Pack</a>.</li>
+
+        <li>Download and import a GNU/Linux Debian 7.2 VirtualBox
+        Appliance.</li>
+
+        <li>Start your new virtual machine, login and open up a terminal and
+        enter the following commands:
+            <pre>
+$su root
+$apt-get update &amp;&amp; apt-get upgrade
+$apt-get install git build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
+$exit
+$cd ~
+$git clone https://github.com/gitju/machinecoin.git machinecoin
+$cd machinecoin/src/
+$make -j 1 -f makefile.unix machinecoind STATIC=1 LDFLAGS="-static-libgcc -static-libstdc++"
+$strip machinecoind
+</pre>
+        </li>
+
+        <li>Now start the new compiled "machinecoind" and close it again after
+        the very first start. Next enter the following command in a terminal:
+            <pre>
+$vi ~/.machinecoin/machinecoin.conf
+</pre>When the config-file opens up just insert the following lines into the
+config-file and hit the save button. Don't forget to change &lt;rpcusername&gt;
+and &lt;rpcpassword&gt;.
+            <pre>
+rpcuser=&lt;rpcusername&gt;
+rpcpassword=&lt;rpcpassword&gt;
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+</pre>
+        </li>
+
+        <li>Now start the new compiled "machinecoind" again inside of
+        ~/machinecoin/src/.</li>
     </ol>
 </body>
 </html>
