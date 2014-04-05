@@ -58,6 +58,7 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://www.swaphole.com/]SwapHole[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]IRC[/size][/font][/align]
+[align=center][font=Verdana][size=large]irc.freenode.net:6667|6697 #themachinecoin[/size][/font][/align]
 [align=center][font=Verdana][size=large]irc.machinecoin.org:6667 #machinecoin[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Forums[/size][/font][/align]
