@@ -52,6 +52,7 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Akzeptanzstellen[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.eu/]Machinecoin Auctions[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://mycrypto.de/]MyCrypto[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Wechselstuben[/size][/font][/align]
