@@ -63,7 +63,7 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large]irc.machinecoin.org:6667 #machinecoin[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Forums[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=552633.0]Bitcointalk.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk.org[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia.org[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://forum.machinecoin.org]Machinecoin.org[/url][/size][/font][/align]
 
