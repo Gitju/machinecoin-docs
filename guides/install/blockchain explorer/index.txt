@@ -1,0 +1,37 @@
+For those who want to run an own Abe Blockchain Explorer a little HowTo.
+
+1. On Linux do as root:
+[code]sudo apt-get install mysql-client mysql-server python-mysqldb python-crypto git[/code]
+
+2. During the installation its neccessary to enter root credentials for the mysql server.
+After this is done enter the following command to login into the database:
+[code]mysql -u root -p[/code]
+
+3. Now enter the following commands into mysql and change <password>:
+[code]create database abe;
+CREATE USER 'abe'@'localhost' IDENTIFIED BY '<password>';
+grant all on abe.* to abe;
+quit[/code]
+
+4. Change to a normal user on your host and clone the repository of abe:
+[code]git clone https://github.com/Gitju/machinecoin-abe.git abe[/code]
+
+5. Make a copy of abe.conf
+[code]cp abe/abe.conf abe-mac.conf[/code]
+
+6. Edit abe-mac.conf and add the following lines and change <dbuserpassword>, <user> and <serverip> just as you need it to be:
+[code]default-loader = blkfile
+dbtype MySQLdb
+connect-args {"user":"abe","db":"abe","passwd":"<dbuserpassword>"}
+upgrade
+port 8080
+host <serverip>
+datadir = /home/<user>/.machinecoin[/code]
+
+7. Init the database
+[code]python -m Abe.abe --config abe-mac.conf --commit-bytes 100000 --no-serve[/code]
+
+8. Start the blockchain explorer
+[code]python -m Abe.abe --config abe-mac.conf[/code]
+or in the background using
+[code]nohup python -m Abe.abe --config abe-mac.conf &[/code]
