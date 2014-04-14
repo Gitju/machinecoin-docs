@@ -72,8 +72,6 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=http://forum.machinecoin.org]Machinecoin.org[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Social[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://broadster.de/machinecoin?lang=en]Broadster[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://socialiter.de/index.php?a=profile&u=machinecoin&lang=english]Socialiter[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://twitter.com/machinecoin]Twitter[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Tutorial Videos[/font][/size][/center]
