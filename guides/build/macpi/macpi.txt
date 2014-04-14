@@ -1,0 +1,211 @@
+[b]Install Raspbian to a SD Card[/b]
+Prerequisites:
+- Raspberry Pi Model B with 512 MB 
+  Heard the "made in UK" ones got the best quality so I bought a bundle
+  which consists of a UK version of the Raspberry Pi Model B from Amazon http://www.amazon.de/gp/product/B00IHF024E/
+- SDHC Card with 16GB
+  Should be compatible for the Raspberry Pi and class 10 for best results.
+  I have used SanDisk SDSDU-016G-U46 Ultra SDHC Class 10.
+- Network cable
+  To connect from your computer via SSH to the Raspberry Pi.
+  You can also use mouse/keyboard/display instead and forget the SSH stuff.
+- Internet connection
+  The Raspberry Pi should be connected to the internet. 
+1. Download Raspian SD Card image from
+http://www.raspberrypi.org/downloads/
+and follow the given instructions located at 
+http://www.raspberrypi.org/documentation/installation/installing-images/README.md
+In the next few steps I'll show you this for Mac OS X 10.9.2 feel free to add instructions for other systems here as well.
+2. Format the SD Card with the hard drive diagnose utility using FAT (FAT32) and give the SD Card the name "RaspberryPi" while doing this.
+3. Open up a terminal and type in
+[code]$ diskutil list[/code]
+There you will see all your connected hard drives. Choose the one with the name "RaspberryPi" and look for its identifier. For me thats disk1 and ensure you got the right one otherwise you can completely delete your system hard drive.
+4. Type into the terminal
+[code]$ diskutil unmountDisk /dev/diskNUMBER[/code]
+while replacing NUMBER with the number of your sd card. 
+6. Type into the terminal
+[code]$ sudo dd if=path_to_your_raspbian.img of=/dev/diskNUMBER bs=4m[/code]
+and wait this can take a while up to 1/2 hour
+7. Eject the SD Card
+[code]$ diskutil eject /dev/diskNUMBER[/code]
+and put it into your Raspberry Pi.
+8. Put the SD Card into Raspberry Pi, connect the Raspberry Pi with your Computer and boot
+9. Find out the IP and connect via SSH to it. 
+I used the app https://itunes.apple.com/de/app/lanscan/id472226235?mt=12 to find out the IP.
+SSH Server is already installed and activated on Raspbian.
+The default user is "pi" and password "raspberry".
+[code]$ ssh -l pi IP[/code]
+
+[b]Mount an USB Stick[/b]
+Prerequisites:
+- USB Stick formatted with FAT (FAT32)
+- Tutorial done above
+1. Get su
+[code]$ sudo su[/code]
+2. Put USB Stick into the Raspberry Pi and get the system name
+[code]$ tail -f /var/log/messages[/code]
+The part after sda: ... should give the name for me its sda1 which I'll use from now on
+3. Create a directory
+[code]$ mkdir /media/usbstick[/code]
+4. If sda1 is the name then mount it with
+[code]$ mount -t vfat -o uid=pi,gid=pi /dev/sda1 /media/usbstick/[/code]
+5. To automatically mount the drive at every start just get the UUID
+[code]$ blkid /dev/sda1[/code]
+6. And add the line "UUID=BF12-15E9 /media/usbstick/ vfat defaults,auto,umask=000,users,rw 0" to
+[code]$ vi /etc/fstab[/code]
+while using your own UUID I used here mine its BF12-15E9
+
+[b]Put a swapfile onto the mounted USB Stick[/b]
+Prerequisites:
+- Tutorials done above
+1. Get su
+[code]$ sudo su[/code]
+2. Do
+[code]$ vi /etc/dphys-swapfile [/code]
+and add
+CONF_SWAPFILE=/media/usbstick/swap
+CONF_SWAPSIZE=1024
+to it
+3. Do some magic
+[code]$ dphys-swapfile swapoff
+$ dd if=/dev/zero of=/media/usbstick/swap bs=1M count=1024
+$ mkswap /media/usbstick/swap
+$ dphys-swapfile setup
+$ dphys-swapfile swapon[/code]
+4. Check if its in there
+[code]$ swapon -s[/code]
+
+[b]Activate WLAN[/b]
+Prerequisites:
+- Tutorials done above
+- WLAN Stick
+  I have used EDIMAX EW-7811 Wifi Wireless Wlan USB dongle.
+1. Get su
+[code]$ sudo su[/code]
+2. Put the WLAN Stick into the Raspberry Pi and then run
+[code]$ dmesg[/code]
+This should give a result like "usbcore: registered new interface driver rtl8192cu..." 
+3. Check if the new network device wlan0 can be seen at
+[code]$ ifconfig[/code]
+4. Deactivate the energy save function of the EDIMAX driver
+[code]$ sudo vi /etc/modprobe.d/8192cu.conf[/code]
+And add "options 8192cu rtw_power_mgnt=0 rtw_enusbss=0" to it.
+5. Now edit
+[code]$ vi /etc/network/interfaces[/code]
+It depends on your WLAN settings but this works for me with WPA. 
+SSID and PASSWORD needs to be added.
+[code]auto lo
+iface lo inet loopback
+
+## Ethernet Schnittstelle 0
+# Beim Bootvorgang automatisch starten
+iface eth0 inet dhcp
+
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet static
+address 192.168.2.133
+netmask 255.255.255.0
+gateway 192.168.2.1
+wpa-ap-scan 1
+wpa-scan-ssid 1
+wpa-ssid "SSID"
+wpa-psk "PASSWORD"[/code]
+
+[b]Expand the partition size to use the full 16GB of the SD Card[/b]
+1. Get su
+[code]$ sudo su[/code]
+2. Type in 
+[code]$ df -h[/code]
+and look for the filesystem where its mounted at /boot for me its [code]"/dev/mmcblk0p1"[/code]
+3. Type in 
+[code]$ fdisk -u -c /dev/mmcblk0[/code]
+After this you land in the environment of fdisk
+4. Inside fdisk type in
+[code]$ p ENTER[/code]
+Don't write ENTER but press ENTER on your keyboard.
+You'll see something then.
+Copy that you'll need it later.
+For me its
+[code]Device Boot      Start         End      Blocks   Id  System
+/dev/mmcblk0p1            8192      122879       57344    c  W95 FAT32 (LBA)
+/dev/mmcblk0p2          122880     5785599     2831360   83  Linux[/code]
+5. Inside fdisk delete the partitions that are not boot. In my case its partition 2. 
+[code]$ d 
+$ 2[/code]
+6. Now create a new partition
+[code]$ n 
+$ p 
+$ 2[/code]
+fdisk wants then the start of the 2nd partition its the value that you have copy/pasted and in my case 122880
+Then fdisk wants the last sector choose here the value that is shown at "default".
+7. Save the new table
+[code]$ w[/code]
+8. Reboot the system
+[code]$ reboot[/code]
+9. Get su
+[code]$ sudo su[/code]
+10. Resize the partition
+[code]$ resize2fs /dev/mmcblk0p2[/code]
+11. Check the result 
+[code]$ df -h[/code]
+12. Exit su
+[code]$ exit[/code]
+
+[b]Setup a Machinecoin supernode[/b]
+1. Get su
+[code]$ sudo su[/code]
+2. Install Libs
+[code]$ apt-get update && apt-get upgrade && apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev[/code]
+3. Exit to su to user
+[code]$ exit[/code]
+4. Compile
+[code]$ cd ~ && git clone https://github.com/Gitju/machinecoin && cd machinecoin/src/ && make -f makefile.unix USE_UPNP=-[/code]
+5. Test the Machinecoin-Daemon
+[code]$ ./machinecoind  [/code]
+6. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 
+[code]rpcuser=<rpcusername>
+rpcpassword=<rpcpassword>
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+disablewallet=0
+maxconnections=500
+bloomfilters=1 
+maxsendbuffer=256000 
+maxreceivebuffe=256000[/code]
+7. Forward port 40333 in your router to your Raspberry Pi and may setup a dyndns for your router. 
+
+[b]Additional notes I[/b]
+If the Raspberry Pi is reachable from outside change the default password for the user "pi". 
+1. Just type in
+[code]passwd[/code]
+
+[b]Additional notes II[/b]
+After I did the setup of the Raspberry Pi I saw that there is a Raspberry Pi config program included in Raspian that makes some stuff easier.
+1. Get su
+[code]$ sudo su[/code]
+2. Call the config program
+[code]$ raspi-config[/code]
+
+[b]Additional notes III[/b]
+It could be useful to add an autostart for the Machinecoin-Daemon and also a script for an automatically update would be cool.
+
+[b]Additional notes IV[/b]
+It can also be useful to install nginx and serve the Machinecoin Community Kit, Machinecoin Paperwallet, Backup of the Machinecoin Blockchain and Backup of the Machinecoin Source Code
+1. Install nginx
+[code]$ sudo apt-get install nginx
+sudo sed -i "s/worker_processes 4;/worker_processes 1;/g" /etc/nginx/nginx.conf
+sudo sed -i "s/worker_connections 768;/worker_connections 128;/g" /etc/nginx/nginx.conf
+sudo /etc/init.d/nginx start[/code]
+2. Enable directory listing
+[code]$ vi /etc/nginx/sites-enabled/default[/code]
+Add "autoindex on;" to "location /"
+3. Restart nginx
+[code]$ /etc/init.d/nginx restart[/code]
+4. Copy the Machinecoin Community Kit, Machinecoin Paperwallet, Backup of the Machinecoin Blockchain and Backup of the Machinecoin Source Code to /usr/share/nginx/www/
+5. Tell the router to forward the port(s) 80,443 to your Raspberry Pi
+6. Setup Dyndns for the router or directly via the Raspberry Pi
