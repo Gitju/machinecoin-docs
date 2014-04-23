@@ -51,7 +51,6 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 
 [center][size=20pt][font=Verdana]Minen-Förderverbände[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://machinecoin.auxmining.de/]Auxmining[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://mac.talesfromthescrypt.org/]TalesFromTheScrypt[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Minen-Fördersoftware[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/font][/size][/center]
