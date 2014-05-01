@@ -53,6 +53,7 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 [center][size=20pt][font=Verdana]Mining-Pools[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://machinecoin.auxmining.de/]Auxmining[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://p2pool.thepeeps.net:6224/]ThePeePs[/url][/font][/size][/center]
+[center][size=15pt][font=Verdana][url=http://pool.scryptpower.de/]Scryptpower[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Miner[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/font][/size][/center]
