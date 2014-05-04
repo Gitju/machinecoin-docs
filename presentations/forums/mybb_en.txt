@@ -63,7 +63,7 @@ rpcallowip=127.0.0.1[/code][/align]
 
 [align=center][font=Verdana][size=x-large]Exchanges[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/]Comkort[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.swaphole.com/]SwapHole[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]IRC[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://webchat.freenode.net/?channels=#themachinecoin]irc.freenode.net:6667|6697 #themachinecoin[/url][/size][/font][/align]
