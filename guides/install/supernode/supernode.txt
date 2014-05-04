@@ -1,0 +1,39 @@
+If you own a server and want to strengthen the Machinecoin network you can become a supernode.
+
+1. Download and install the latest version of Machinecoin from the official Machinecoin.org homepage. You will just need to install the Machinecoin-Daemon and setup the basic machinecoin.conf that you also would use as a normal user.
+
+2. Then edit machinecoin.conf and add
+[code]# If you just want to run a relay and no wallet this saves RAM
+disablewallet=1
+# If you have plenty RAM and bandwidth you can increase the number of connections
+maxconnections=500
+#bloomfilter
+bloomfilters=1
+#maxsendbuffer
+maxsendbuffer=256000
+#maxreceivebuffer
+maxreceivebuffer=256000
+[/code]
+
+3. (optional!) The following Linux iptables rules limits the number of connections to
+   TCP port 40333 per IP address and per /24 subnet.  This protects against
+   a connection exhaustion DoS attack.  If you have lots of RAM and bandwidth
+   you can increase these limits.
+
+[code]# Allow eight connections per IPv4 /24 subnet
+-A INPUT -p tcp --syn --dport 40333 -m connlimit --connlimit-above 8 --connlimit-mask 24 -j REJECT --reject-with tcp-reset
+# Allow two connection per IPv4 address
+-A INPUT -p tcp --syn --dport 40333 -m connlimit --connlimit-above 2 -j REJECT --reject-with tcp-reset
+# Allow TCP connection if not rejected by the previous limit
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 40333 -j ACCEPT[/code]
+
+4. (optional!) Edit machinecoin.conf and add one (not more, no need for!) other supernode 
+[code]#other supernode
+addnode=ADDRESS[/code]
+from the list of supernodes (ADDRESSES):
+5.45.103.196:40333
+5.231.57.72:40333
+5.231.65.207:40333
+5.231.63.191:40333
+
+5. This document is related to the Litecoin Supernode Howto: https://litecoin.org/downloads/HOWTO-SUPERNODE.txt
