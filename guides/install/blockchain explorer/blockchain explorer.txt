@@ -17,7 +17,8 @@ quit[/code]
 [code]git clone https://github.com/Gitju/machinecoin-abe.git abe[/code]
 
 5. Make a copy of abe.conf
-[code]cp abe/abe.conf abe-mac.conf[/code]
+[code]cd abe/
+cp abe.conf abe-mac.conf[/code]
 
 6. Edit abe-mac.conf and add the following lines and change <dbuserpassword>, <user> and <serverip> just as you need it to be:
 [code]default-loader = blkfile
