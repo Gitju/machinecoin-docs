@@ -35,5 +35,6 @@ from the list of supernodes (ADDRESSES):
 5.231.57.72:40333
 5.231.65.207:40333
 5.231.63.191:40333
+macpi.machinecoin.org:40333
 
 5. This document is related to the Litecoin Supernode Howto: https://litecoin.org/downloads/HOWTO-SUPERNODE.txt
