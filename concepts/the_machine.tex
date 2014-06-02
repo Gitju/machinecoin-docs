@@ -1,0 +1,127 @@
+%%%========================== %%%
+%%%  Set Beamer as class        
+%%%==========================%%%
+%%
+%% Beamer
+\documentclass{beamer}
+\setbeamercovered{transparent}
+
+%%%========================== %%%
+%%%  Set theme        
+%%%==========================%%%
+%%
+%% Warsaw
+\usetheme{Warsaw}
+
+%%%========================== %%%
+%%%  German Umlauts                            
+%%%==========================%%%
+%%
+%% For Mac OS X
+%% \usepackage[applemac]{inputenc}
+%% For PC Windows
+%% \usepackage[ansinew]{inputenc}
+%%
+%% For PC Linux 
+%% \usepackage[latin1]{inputenc}
+%%
+%% For UTF-8
+\usepackage[utf8]{inputenc}
+
+%%%========================== %%%
+%%%  German hyphenation              
+%%%==========================%%%
+%%
+\usepackage{ngerman}
+
+%%%========================== %%%
+%%%  Quotes
+%%%  \enquote{}       
+%%%==========================%%%
+%%
+\usepackage[babel,german=quotes]{csquotes}
+
+%%%========================== %%%
+%%%  Tikz   
+%%%==========================%%%
+%%
+\usepackage{xcolor}
+\usepackage{tikz,pgffor}
+\usetikzlibrary{shadows}
+\tikzset{
+	MyPersp/.style={scale=1.8,x={(-0.8cm,-0.4cm)},y={(0.8cm,-0.4cm)},
+    z={(0cm,1cm)}},
+%  MyPersp/.style={scale=1.5,x={(0cm,0cm)},y={(1cm,0cm)},
+%    z={(0cm,1cm)}}, % uncomment the two lines to get a lateral view
+	MyPoints/.style={fill=white,draw=black,thick}
+		}
+
+% #1 number of teeths
+% #2 radius blanket intern
+% #3 radius blanket extern
+% #4 angle from start to end of the first arc
+% #5 angle to decale the second arc from the first 
+% #6 radius dna intern
+% #7 radius dna extern
+% #8 xshift
+\newcommand{\gear}[8]{%
+  \foreach \i in {1,...,#1} {%
+    [rotate=(\i-1)*360/#1]  (0:#2)  arc (0:#4:#2) {[rounded corners=2pt]
+     -- (#4+#5:#3)  arc (#4+#5:360/#1-#5:#3)} --  (360/#1:#2)
+  }%
+  (0,0) circle[radius=#6]
+  (0,0) circle[radius=#7];
+\draw[thick,xshift=#8]
+\foreach \i in {1,2,...,36} {%
+  [rotate=(\i-1)*10]  (0.0,#6) -- (0.0,#7)
+};
+}  
+
+\usepackage{hyperref}
+
+
+%%%========================== %%%
+%%%  Settings for the startpage              
+%%%==========================%%%
+%%
+\title{Introducing: \enquote{The Machine} (DRAFT)}
+\author{\texorpdfstring{\ Jürgen Scholz \ \newline\url{j.scholz@machinecoin.org}}{Author}}
+\institute{The Machine - A complete self-contained cryptographic ecosphere driven by nothing but the Machinecoin cryptocurrency.}
+\date{2014/06/02}
+
+%%%========================== %%%
+%%%  Document Start                                
+%%%==========================%%%
+%%
+\begin{document}
+\frame{\titlepage}
+
+\frame
+{
+\tableofcontents
+}
+
+\section{Introduction}
+
+\frame
+{   
+In November 2008, a paper titled ``Bitcoin: A Peer-to-Peer Electronic Cash System'' was posted on The Cryptography Mailing List at metzdowd.com. It was written by either a person or group with the pseudonymous ``Satoshi Nakamoto''. In this paper methods of using a peer-to-peer network to generate a system for electronic transactions without relying on trust were described in detail.
+\newline
+\newline
+\visible<2->{\texttt{``A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.''}
+  \vskip5mm
+  \hspace*\fill{\small--- Satoshi Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System\footnote{http://bitcoin.org/bitcoin.pdf}}}
+}
+
+
+%\section{Bibliography}
+%\begin{frame}
+%	\frametitle{Quellen}
+%	\bibliographystyle{alpha}
+%	\bibliography{literatur}		
+%\end{frame} 
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%  Dokument Ende                           
+%%%%%%%%%%%%%%%%%%%%%%
