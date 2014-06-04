@@ -124,6 +124,87 @@ In January 2009, these methods came into existence through the release of the fi
 \visible<3->{These transactions provided a good evidence that it is not just in theory but also in practice possible to have a purely peer-to-peer electronic cash without the need to go through a financial institution.}
 }
 
+\frame
+{   
+Since then a lot of alternative cryptocurrencies have been created. All or most of them are working on the same basis just as Bitcoin does but with slightly different algorithms for special tasks.  
+\newline
+\newline
+\visible<2->{So in general nothing seems to may have changed despite one thing: the major of the cryptoscene has turned cryptocurrencies away from being electronic cash into something that could be better described as classical currency slaves.}
+\newline
+\newline
+\visible<3->{This means that their ``values''\footnote{http://machinecoin.org/wp-content/uploads/2014/04/value.pdf} are rather determined by exchange rates than by real available products or services which a (crypto)currency originally is made for and therefore the cryptoscene has lost the path.}
+}
+
+\frame
+{
+So lets go back to basic and have a look at the primary function of any given (crypto)currency:
+\newline
+\setbeamercovered{transparent}
+\begin{enumerate} 
+\item<2-> A (crypto)currency is a medium that makes exchanges of products and/or services between two parties (buyer/seller) possible ...
+\item<3-> ... even if the one who is the buyer has got no product and/or service available ...
+\item<4-> ... that the seller would like to have and the buyer would like to give in exchange for it
+\end{enumerate} 
+\ 
+\newline
+\visible<5->{To focus on this we have decided to model a complete self-contained cryptographic ecosphere driven by nothing but the Machinecoin cryptocurrency.}
+}
+
+\frame
+{
+\begin{tikzpicture}[MyPersp,font=\large]
+	\def\h{2.5}% Heigth of the ellipse center 
+	\def\a{35}% Angle of the section plane with the horizontal
+	\def\aa{35}% Angle that defines position of generatrix PA--PB
+	\pgfmathparse{\h/tan(\a)}
+  	\let\b\pgfmathresult
+	\pgfmathparse{sqrt(1/cos(\a)/cos(\a)-1)}
+  	\let\c\pgfmathresult %Center Focus distance of the section ellipse.
+	\pgfmathparse{\c/sin(\a)}
+  	\let\p\pgfmathresult % Position of Dandelin spheres centers
+     					% on the Oz axis (\h +/- \p)
+	\coordinate (A) at (2,\b,0);
+	\coordinate (B) at (-2,\b,0);
+	\coordinate (C) at (-2,-1.5,{(1.5+\b)*tan(\a)});
+	\coordinate (D) at (2,-1.5,{(1.5+\b)*tan(\a)});
+	\coordinate (E) at (2,-1.5,0);
+	\coordinate (F) at (-2,-1.5,0);
+	\coordinate (CLS) at (0,0,{\h-\p});
+	\coordinate (CUS) at (0,0,{\h+\p});
+	\coordinate (FA) at (0,{\c*cos(\a)},{-\c*sin(\a)+\h});% Focii
+	\coordinate (FB) at (0,{-\c*cos(\a)},{\c*sin(\a)+\h});
+	\coordinate (SA) at (0,1,{-tan(\a)+\h}); % Vertices of the
+                                           % great axes of the ellipse
+	\coordinate (SB) at (0,-1,{tan(\a)+\h});
+	\coordinate (PA) at ({sin(\aa},{cos(\aa)},{\h+\p});
+	\coordinate (PB) at ({sin(\aa},{cos(\aa)},{\h-\p});
+	\coordinate (P) at ({sin(\aa)},{cos(\aa)},{-tan(\a)*cos(\aa)+\h});
+     % Point on the ellipse on generatrix PA--PB
+
+	\draw[thick] (A)--(B)--(C)--(D)--cycle;
+	\draw[thick] (D)--(E)--(F)--(C);
+	\draw[thick] (A)--(E) (B)--(F);
+
+
+	\foreach \i in {0,0}{%Spheres!
+		\foreach \t in {0,15,...,165}% meridians
+			{\draw[thick,-] ({cos(\t)},{sin(\t)},\h+\i*\p)
+				\foreach \rho in {5,10,...,360}
+					{--({cos(\t)*cos(\rho)},{sin(\t)*cos(\rho)},
+          {sin(\rho)+\h+\i*\p})}--cycle;
+			}
+		\foreach \t in {-75,-60,...,75}% parallels
+			{\draw[thick,-] ({cos(\t)},0,{sin(\t)+\h+\i*\p})
+				\foreach \rho in {5,10,...,360}
+					{--({cos(\t)*cos(\rho)},{cos(\t)*sin(\rho)},
+          {sin(\t)+\h+\i*\p})}--cycle;
+			}
+		}
+
+    \draw[thick,-] (17.5,17.5,17.5) -- (17,20,19) node[right,above]{Machinecoin ecosphere};
+\end{tikzpicture}
+}
+
 
 %\section{Bibliography}
 %\begin{frame}
