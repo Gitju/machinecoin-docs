@@ -65,6 +65,7 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://c-cex.com/?id=vote&vc=1]C-CEX[/url] (Vote!)[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.coinano.com/vote?cid=81841]Coinano[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.mintpal.com/voting#MAC]MintPal[/url] (Vote!)[/size][/font][/align]
 
