@@ -62,7 +62,6 @@ rpcallowip=127.0.0.1[/code][/td][/tr][/table][/center]
 
 [center][size=20pt][font=Verdana]Akzeptanzstellen[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://auctions.machinecoin.eu/]Machinecoin Auctions[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://mycrypto.de/]MyCrypto[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Wechselstuben[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://comkort.com/]Comkort[/url][/font][/size][/center]
