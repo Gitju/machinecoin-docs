@@ -156,11 +156,11 @@ Then fdisk wants the last sector choose here the value that is shown at "default
 1. Get su
 [code]$ sudo su[/code]
 2. Install Libs
-[code]$ apt-get update && apt-get upgrade && apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev[/code]
+[code]$ apt-get update && apt-get upgrade && apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev qrencode libqrencode-dev[/code]
 3. Exit to su to user
 [code]$ exit[/code]
 4. Compile
-[code]$ cd ~ && git clone https://github.com/Gitju/machinecoin && cd machinecoin/src/ && make -f makefile.unix USE_UPNP=-[/code]
+[code]$ cd ~ && git clone https://github.com/Gitju/machinecoin && cd machinecoin/src/ && make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 && strip machinecoind[/code]
 5. Test the Machinecoin-Daemon
 [code]$ ./machinecoind  [/code]
 6. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 
