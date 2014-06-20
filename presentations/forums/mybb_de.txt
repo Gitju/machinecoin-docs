@@ -17,7 +17,7 @@
 [align=center][font=Verdana][size=large]Ausschüttung halbiert sich nach jeweils 840 Tsd. Blöcken (~ alle 4 Jahre)[/size][/font][/align]
 [align=center][font=Verdana][size=large]maximal ~ 84 Millionen Münzen[/size][/font][/align]
 [align=center][font=Verdana][size=large]50 Münzen pro Block[/size][/font][/align]
-[align=center][font=Verdana][size=large]Schwierigkeitsrekalibrierung nach jeweils 2016 Blöcken[/size][/font][/align]
+[align=center][font=Verdana][size=large]Schwierigkeitsrekalibrierung nach jeweils 1 Block[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Android Brieftasche[/url][/size][/font][/align]
@@ -57,7 +57,8 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Akzeptanzstellen[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.eu/]Machinecoin Auctions[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.eu/]auctions.machinecoin.eu[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Wechselstuben[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/]Comkort[/url][/size][/font][/align]

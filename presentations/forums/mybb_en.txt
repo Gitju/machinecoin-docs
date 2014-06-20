@@ -17,7 +17,7 @@
 [align=center][font=Verdana][size=large]subsidy halves in 840k blocks (~4 years)[/size][/font][/align]
 [align=center][font=Verdana][size=large]~84 million total coins[/size][/font][/align]
 [align=center][font=Verdana][size=large]50 coins per block[/size][/font][/align]
-[align=center][font=Verdana][size=large]2016 blocks to retarget difficulty[/size][/font][/align]
+[align=center][font=Verdana][size=large]1 block to retarget difficulty[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url][/size][/font][/align]
@@ -58,7 +58,8 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Shops[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.eu/]Machinecoin Auctions[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.eu/]auctions.machinecoin.eu[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Exchanges[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/]Comkort[/url][/size][/font][/align]
