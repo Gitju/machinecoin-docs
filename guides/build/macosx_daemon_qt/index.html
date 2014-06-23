@@ -113,14 +113,14 @@ xcode-select --install
         <li>Open up a terminal and type in the following command to install the
         necessary dependencys:
             <pre>
-sudo /opt/local/bin/port install boost db48 qt4-mac openssl miniupnpc
+sudo /opt/local/bin/port install boost db48 qt4-mac openssl miniupnpc qrencode
 </pre>
         </li>
 
         <li>Now we will clone the Machinecoin source code from GitHub. Open up
         a terminal and type in the following commands:
             <pre>
-git clone https://github.com/Gitju/machinecoin.git
+git clone https://github.com/Gitju/Machinecoin.git
 </pre>
         </li>
 
@@ -134,7 +134,7 @@ git clone https://github.com/Gitju/machinecoin.git
         <li>Next navigate with the terminal to the "machinecoin/src" folder and
         compile the Machinecoin-Daemon with the following command:
             <pre>
-make -f makefile.osx USE_UPNP=-
+make -f makefile.osx USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1
 </pre>
         </li>
 
@@ -148,7 +148,7 @@ strip machinecoind
         <li>To create the Machinecoin-Qt navigate into the "machinecoin" folder
         and type in the following command:
             <pre>
-qmake "USE_UPNP=-" machinecoin-qt.pro
+qmake machinecoin-qt.pro USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1
 </pre>and
             <pre>
 make -f Makefile
