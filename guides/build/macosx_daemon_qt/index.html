@@ -9,12 +9,12 @@
 
 <body>
     <h1>Get started with compiling the Machinecoin-Qt and the
-    Machinecoin-Daemon for Mac OS X 10.9.2 Mavericks:</h1>
+    Machinecoin-Daemon for Mac OS X 10.9.3 Mavericks:</h1>
     
     <h2>Dynamically linked Machinecoin-Wallet and the Machinecoin-Daemon</h2><br>
 
     <ol>
-        <li>You need a Mac and Mac OS X 10.9.2 Mavericks installed on it. If you
+        <li>You need a Mac and Mac OS X 10.9.3 Mavericks installed on it. If you
         got both open up the Apple App Store on that Mac and search for
         "Mavericks".</li>
 
@@ -43,8 +43,8 @@ mv /tmp/Mavericks.cdr ~/Desktop/Mavericks.iso
         "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
         Pack</a>.</li>
 
-        <li>Start VirtualBox and create a new virtual machine with the same
-        settings as you can see in the following screenshot:
+        <li>Start VirtualBox and create a new virtual machine with a hard drive with at least 25 GB and keep the rest of the settings the same
+        as you can see in the following screenshots:
 
             <p><a href=
             "Bildschirmfoto-2014-02-05-um-16.20.41-e1391613707587.png"><img alt=""
@@ -61,7 +61,7 @@ mv /tmp/Mavericks.cdr ~/Desktop/Mavericks.iso
 
         <li>Now go to the settings for the hard-/ and optical-drives and and
         click on the empty disc on the left side. After this click on the
-        little cd on the right side and choose the Mac OS X 10.9.2 Mavericks .iso
+        little cd on the right side and choose the Mac OS X 10.9.3 Mavericks .iso
         that you have created in the steps before.
 
             <p><a href=
@@ -80,7 +80,7 @@ mv /tmp/Mavericks.cdr ~/Desktop/Mavericks.iso
         <li>Start your new virtual machine until you can see the installer.
         Select your favourite language and when you come to the screen where
         you have to choose the right harddrive where you want to install Mac OS
-        X 10.9.2 Mavericks you will see no drive. But don't worry this is normal
+        X 10.9.3 Mavericks you will see no drive. But don't worry this is normal
         just click in the menu on "Utilitys" &gt; "Disc Utility". Select the
         virtual hard drive that you have create on the left side and on the
         right side click on the tab with the name "Erase". Type in a name for
@@ -94,9 +94,9 @@ mv /tmp/Mavericks.cdr ~/Desktop/Mavericks.iso
         </li>
 
         <li>Now continue the rest of the installation process just as you had
-        installed Mac OS X 10.9.2 on your own Mac.</li>
+        installed Mac OS X 10.9.3 on your own Mac.</li>
 
-        <li>Now we configure your new Mac OS X 10.9.2 to be able to compile the
+        <li>Now we configure your new Mac OS X 10.9.3 to be able to compile the
         sourcecode. At first you'll have to download and install Xcode from the
         Apple App Store.</li>
 
@@ -125,7 +125,7 @@ git clone https://github.com/Gitju/Machinecoin.git
         </li>
 
         <li>We open "makefile.osx" and uncomment a line because of some changes
-        in osx 10.9.2. The result should look like the following:
+        in osx 10.9.3. The result should look like the following:
             <pre>
 # CFLAGS += -stdlib=libstdc++
 </pre>
