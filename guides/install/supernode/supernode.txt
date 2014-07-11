@@ -32,7 +32,6 @@ maxreceivebuffer=256000
 addnode=ADDRESS[/code]
 from the list of supernodes (ADDRESSES):
 5.45.103.196:40333
-5.231.57.72:40333
 5.231.65.207:40333
 5.231.63.191:40333
 macpi.machinecoin.de:40333
