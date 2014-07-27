@@ -1,5 +1,5 @@
-Titel: [X] [MAC] ([X als Wort ausgeschrieben] Machinecoin) Kryptowährung
+Title: [X] [MAC] ([X] Machinecoin) Cryptocurrency
 
-<font size="4"><b>Sie bieten hier auf [X] Machinecoin ([X als Wort ausgeschrieben]).
+<font size="4"><b>Sie bieten hier auf [X] Machinecoin (Zehntausend).
 
 </b></font><div><font size="4"><b><br></b></font></div><div><font size="2">Die Machinecoin werden nach Zahlungseingang direkt an Ihre Machinecoin Wallet-Adresse überwiesen.</font></div><div><font size="2"><b>Bitte teilen Sie nach der Auktion daher bitte unbedingt Ihre korrekte Wallet-Adresse mit.</b></font></div><div><font size="2"><br></font></div><div><font size="4"><b>English</b></font></div><div><font size="4"><b><br></b></font></div><div></div><div><font size="4"><b>You are bidding here on [X] Machinecoin ([X in spoken language]).</b></font></div><div><font size="2"><br></font></div><div><font size="2">The Machinecoin are send after receipt of payment directly to your Machinecoin Wallet address.</font></div><div><font size="2"><b>Therefor please provide a correct Machinecoin Wallet address after the auction ended.</b></font></div><div><font size="2"><br></font></div><div><font size="2"><br></font></div>
