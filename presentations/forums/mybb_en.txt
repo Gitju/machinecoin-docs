@@ -5,6 +5,8 @@
 
 [align=center][font=Verdana][size=x-large]Website[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://www.Machinecoin.org]www.Machinecoin.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://www.Machinecoin.de]www.Machinecoin.de[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://www.Machinecoin.tk]www.Machinecoin.tk[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Algorithm[/size][/font][/align]
 [align=center][font=Verdana][size=large]Scrypt[/size][/font][/align]
@@ -33,7 +35,19 @@ server=1
 listen=1
 daemon=1
 gen=0
-rpcallowip=127.0.0.1[/code][/align]
+rpcallowip=127.0.0.1
+#disablewallet=1
+#maxconnections=500
+#bloomfilters=1 
+#maxsendbuffer=256000 
+#maxreceivebuffe=256000
+addnode=5.45.103.196
+addnode=5.231.65.207
+addnode=5.231.63.191
+addnode=5.101.97.201
+addnode=macpi.machinecoin.de
+addnode=mine.scryptpower.de
+[/code][/align]
 
 [align=center][font=Verdana][size=x-large]Ports[/size][/font][/align]
 [align=center][font=Verdana][size=large]40332 RPC[/size][/font][/align]
@@ -48,8 +62,11 @@ rpcallowip=127.0.0.1[/code][/align]
 
 [align=center][font=Verdana][size=x-large]Mining-Pools[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.auxmining.de/]Auxmining[/url][/size][/font][/align]
+[align=center][code]minerd -a scrypt -o stratum+tcp://machinecoin.auxmining.de:5555 -u <user.worker> -p <password> --threads=1[/code][/align]
 [align=center][font=Verdana][size=large][url=http://p2pool.thepeeps.net:6224/]ThePeePs[/url][/size][/font][/align]
+[align=center][code]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/code][/align]
 [align=center][font=Verdana][size=large][url=http://pool.scryptpower.de/]Scryptpower[/url][/size][/font][/align]
+[align=center][code]minerd -a scrypt -o stratum+tcp://mine.scryptpower.de:3333 -u <user.worker> -p <password> --threads=1[/code][/align]
 
 [align=center][font=Verdana][size=x-large]Miner[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/size][/font][/align]
@@ -57,14 +74,18 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Shops[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large]Buy/sell at [url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url] using MAC[/size][/font][/align]
+[align=center][font=Verdana][size=large]Buy/sell via [url=http://forum.machinecoin.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/size][/font][/align]
+[align=center][img]http://i60.tinypic.com/157opjt.png[/img][/align]
 
 [align=center][font=Verdana][size=x-large]Exchanges[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.mintpal.com/voting#MAC]MintPal[/url] (Vote!)[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://c-cex.com/?id=vote&vc=1]C-CEX[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.coinano.com/voting.seam]Coinano[/url] (Vote!)[/size][/font][/align]
@@ -83,13 +104,16 @@ rpcallowip=127.0.0.1[/code][/align]
 [align=center][font=Verdana][size=large][url=http://multifaucet.tk/index.php?faucet=MAC]multifaucet.tk[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Social[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://facebook.com/pages/Machinecoin/803260353027891]Facebook[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://reddit.com/r/Machinecoin]Reddit[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://twitter.com/machinecoin]Twitter[/url][/size][/font][/align]
 
-[align=center][font=Verdana][size=x-large]Tutorial Videos[/size][/font][/align]
+[align=center][font=Verdana][size=x-large]Tutorials[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Trailer[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=GRMbgmMkv3Y&hd=1]Machinecoin Android Wallet[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=3j4bID7RJtE]"It's not just a coin. It's a movement."[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Support Machinecoin[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org/showthread.php?tid=126]Donate to the Machinecoin Developer Team[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org/showthread.php?tid=126]Donate to the Machinecoin Core Development Team[/url][/size][/font][/align]
