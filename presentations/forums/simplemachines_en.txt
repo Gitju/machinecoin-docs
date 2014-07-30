@@ -109,7 +109,7 @@ addnode=mine.scryptpower.de[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=http://reddit.com/r/Machinecoin]Reddit[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://twitter.com/machinecoin]Twitter[/url][/font][/size][/center]
 
-[center][size=20pt][font=Verdana]Anleitungen[/font][/size][/center]
+[center][size=20pt][font=Verdana]Tutorials[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Trailer[/font][/size][/center]
