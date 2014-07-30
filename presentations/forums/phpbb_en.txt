@@ -1,0 +1,118 @@
+[img]http://i59.tinypic.com/erbyup.png[/img]
+
+[size=200]Machinecoin[/size]
+[size=150]"It's not just a coin. It's a movement."[/size]
+
+[size=150]Website[/size]
+[size=100][url=http://www.Machinecoin.org]www.Machinecoin.org[/url][/size]
+[size=100][url=http://www.Machinecoin.de]www.Machinecoin.de[/url][/size]
+[size=100][url=http://www.Machinecoin.tk]www.Machinecoin.tk[/url][/size]
+
+[size=150]Algorithm[/size]
+[size=100]Scrypt[/size]
+
+[size=150]Currency[/size]
+[size=100]MAC[/size]
+
+[size=150]Specifications[/size]
+[size=100]2.5 minute block targets[/size]
+[size=100]subsidy halves in 840k blocks (~4 years)[/size]
+[size=100]~84 million total coins[/size]
+[size=100]50 coins per block[/size]
+[size=100]1 block to retarget difficulty[/size]
+
+[size=150]Download[/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url][/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Windows Wallet[/url][/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url][/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Wallet Build Instructions[/url][/size]
+
+[size=150]Config[/size]
+[code]rpcuser=<rpcusername>
+rpcpassword=<rpcpassword>
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+#disablewallet=1
+#maxconnections=500
+#bloomfilters=1 
+#maxsendbuffer=256000 
+#maxreceivebuffe=256000
+addnode=5.45.103.196
+addnode=5.231.65.207
+addnode=5.231.63.191
+addnode=5.101.97.201
+addnode=macpi.machinecoin.de
+addnode=mine.scryptpower.de
+[/code]
+
+[size=150]Ports[/size]
+[size=100]40332 RPC[/size]
+[size=100]40333 P2P[/size]
+
+[size=150]Blockchain Explorer[/size]
+[size=100][url=http://blockchain.machinecoin.org:8080]Machinecoin Blockchain Explorer[/url][/size]
+
+[size=150]Paper Wallets[/size]
+[size=100][url=http://paper.machinecoin.org/]paper.machinecoin.org[/url][/size]
+[size=100][url=http://macpi.machinecoin.de/paperwallet/]macpi.machinecoin.de/paperwallet/[/url][/size]
+
+[size=150]Mining-Pools[/size]
+[size=100][url=http://machinecoin.auxmining.de/]Auxmining[/url][/size]
+[code]minerd -a scrypt -o stratum+tcp://machinecoin.auxmining.de:5555 -u <user.worker> -p <password> --threads=1[/code]
+[size=100][url=http://p2pool.thepeeps.net:6224/]ThePeePs[/url][/size]
+[code]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/code]
+[size=100][url=http://pool.scryptpower.de/]Scryptpower[/url][/size]
+[code]minerd -a scrypt -o stratum+tcp://mine.scryptpower.de:3333 -u <user.worker> -p <password> --threads=1[/code]
+
+[size=150]Miner[/size]
+[size=100][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/size]
+[size=100][url=http://sourceforge.net/projects/cpuminer/files/]CpuMiner Windows, Linux, Mac OS X[/url][/size]
+[size=100][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size]
+
+[size=150]Shops[/size]
+[size=100]Buy/sell at [url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url] using MAC[/size]
+[size=100]Buy/sell via [url=http://forum.machinecoin.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/size]
+
+[size=150]Exchanges[/size]
+[size=100][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size]
+[size=100][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size]
+[size=100][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size]
+[size=100][url=https://www.mintpal.com/voting#MAC]MintPal[/url] (Vote!)[/size]
+[size=100][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size]
+[size=100][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size]
+[size=100][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size]
+[size=100][url=https://c-cex.com/?id=vote&vc=1]C-CEX[/url] (Vote!)[/size]
+[size=100][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size]
+[size=100][url=https://www.coinano.com/voting.seam]Coinano[/url] (Vote!)[/size]
+
+[size=150]IRC[/size]
+[size=100][url=http://webchat.freenode.net/?channels=#themachinecoin]irc.freenode.net:6667|6697 #themachinecoin[/url][/size]
+[size=100]irc.machinecoin.org:6667 #machinecoin[/size]
+
+[size=150]Forums[/size]
+[size=100][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk.org[/url][/size]
+[size=100][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia.org[/url][/size]
+[size=100][url=http://forum.machinecoin.org]Machinecoin.org[/url][/size]
+
+[size=150]Faucets[/size]
+[size=100][url=http://faucet.machinecoin.org/]faucet.machinecoin.org[/url][/size]
+[size=100][url=http://multifaucet.tk/index.php?faucet=MAC]multifaucet.tk[/url][/size]
+
+[size=150]Social[/size]
+[size=100][url=http://facebook.com/pages/Machinecoin/803260353027891]Facebook[/url][/size]
+[size=100][url=http://reddit.com/r/Machinecoin]Reddit[/url][/size]
+[size=100][url=https://twitter.com/machinecoin]Twitter[/url][/size]
+
+[size=150]Tutorials[/size]
+[size=100][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/size]
+
+[size=150]Trailer[/size]
+[size=100][url=https://www.youtube.com/watch?v=3j4bID7RJtE]"It's not just a coin. It's a movement."[/url][/size]
+[size=100][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size]
+
+[size=150]Support Machinecoin[/size]
+[size=100][url=http://forum.machinecoin.org/showthread.php?tid=126]Donate to the Machinecoin Core Development Team[/url][/size]
