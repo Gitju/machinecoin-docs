@@ -100,7 +100,6 @@ addnode=mine.scryptpower.de
 [size=100][url=http://forum.machinecoin.org]Machinecoin.org[/url][/size]
 
 [size=150]Faucets[/size]
-[size=100][url=http://faucet.machinecoin.org/]faucet.machinecoin.org[/url][/size]
 [size=100][url=http://multifaucet.tk/index.php?faucet=MAC]multifaucet.tk[/url][/size]
 
 [size=150]Social[/size]
