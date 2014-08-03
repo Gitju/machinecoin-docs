@@ -58,7 +58,6 @@ addnode=mine.scryptpower.de[/CODE]
 
 [SIZE=3][FONT=Verdana]Paper Wallets[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://paper.machinecoin.org/"]paper.machinecoin.org[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://macpi.machinecoin.de/paperwallet/"]macpi.machinecoin.de/paperwallet/[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Mining-Pools[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.auxmining.de/"]Auxmining[/URL][/FONT][/SIZE]
