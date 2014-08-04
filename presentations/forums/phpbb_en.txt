@@ -91,7 +91,6 @@ addnode=mine.scryptpower.de
 
 [size=150]IRC[/size]
 [size=100][url=http://webchat.freenode.net/?channels=#themachinecoin]irc.freenode.net:6667|6697 #themachinecoin[/url][/size]
-[size=100]irc.machinecoin.org:6667 #machinecoin[/size]
 
 [size=150]Forums[/size]
 [size=100][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk.org[/url][/size]
