@@ -22,7 +22,7 @@
 [SIZE=2][FONT=Verdana]1 block to retarget difficulty[/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Download[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Android Wallet[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Android Wallet[/URL] ([URL="https://github.com/Gitju?tab=repositories"]Source[/URL])[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Windows Wallet[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Linux Wallet Build Instructions[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Mac OS X Wallet Build Instructions[/URL][/FONT][/SIZE]

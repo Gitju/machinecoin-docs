@@ -22,10 +22,10 @@
 [size=100]1 block to retarget difficulty[/size]
 
 [size=150]Download[/size]
-[size=100][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url][/size]
-[size=100][url=http://machinecoin.org/installation.html]Machinecoin Windows Wallet[/url][/size]
-[size=100][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url][/size]
-[size=100][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Wallet Build Instructions[/url][/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Windows Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 
 [size=150]Config[/size]
 [code]rpcuser=<rpcusername>

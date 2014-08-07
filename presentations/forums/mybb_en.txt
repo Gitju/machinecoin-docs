@@ -22,10 +22,10 @@
 [align=center][font=Verdana][size=large]1 block to retarget difficulty[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Windows Wallet[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Wallet Build Instructions[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Windows Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Config[/size][/font][/align]
 [align=center][code]rpcuser=<rpcusername>
