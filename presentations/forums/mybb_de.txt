@@ -22,7 +22,7 @@
 [align=center][font=Verdana][size=large]Schwierigkeitsrekalibrierung nach jeweils 1 Block[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Android Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=de.schildbach.wallet_mac]Machinecoin Android Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Windows Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
@@ -80,6 +80,7 @@ addnode=mine.scryptpower.de
 [align=center][font=Verdana][size=x-large]Wechselstuben[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.mintpal.com/voting#MAC]MintPal[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size][/font][/align]

@@ -22,7 +22,7 @@
 [size=100]1 block to retarget difficulty[/size]
 
 [size=150]Download[/size]
-[size=100][url=http://machinecoin.org/installation.html]Machinecoin Android Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=https://play.google.com/store/apps/details?id=de.schildbach.wallet_mac]Machinecoin Android Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 [size=100][url=http://machinecoin.org/installation.html]Machinecoin Windows Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 [size=100][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 [size=100][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
@@ -80,6 +80,7 @@ addnode=mine.scryptpower.de
 [size=150]Exchanges[/size]
 [size=100][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size]
 [size=100][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size]
+[size=100][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size]
 [size=100][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size]
 [size=100][url=https://www.mintpal.com/voting#MAC]MintPal[/url] (Vote!)[/size]
 [size=100][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size]
