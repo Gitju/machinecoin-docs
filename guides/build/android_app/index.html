@@ -91,7 +91,12 @@ $cd ~/Dokumente/bitcoinj
 $mvn clean install -DskipTests
 </pre>
 
-    <p style="text-align: justify;">11. Download IntelliJ IDEA 13 Community
+    <p style="text-align: justify;">11. Create the checkpointfile</p>
+    <pre>
+root@debian:~/Dokumente/bitcoinj/tools# mvn exec:java -Dexec.mainClass=com.google.bitcoin.tools.BuildCheckpoints
+</pre>
+
+    <p style="text-align: justify;">12. Download IntelliJ IDEA 13 Community
     Edition and unpack it. After you have done this open up a terminal and
     change with that terminal into the bin directory of IntelliJ IDEA 13 and
     start the "idea.sh" file:</p>
@@ -100,7 +105,7 @@ $cd ~/Downloads/idea-IC-133.696/bin
 $./idea.sh
 </pre>
 
-    <p style="text-align: justify;">12. Import the wallet into IntelliJ IDEA 13
+    <p style="text-align: justify;">13. Import the wallet into IntelliJ IDEA 13
     with a click on "Import Project".</p>
 
     <p style="text-align: justify;"><a href=
@@ -157,7 +162,7 @@ $./idea.sh
     "./Bildschirmfoto-2014-02-14-um-16.21.16-e1392391394368.png"
     width="600"></a></p>
 
-    <p style="text-align: justify;">13. Now its time to do all the steps that
+    <p style="text-align: justify;">14. Now its time to do all the steps that
     are&nbsp;necessary to be able to compile the wallet for the very first
     time. At first lets have a look at the dashboard that you'll see right
     after the import. On the top right appears a message where you should click
@@ -195,9 +200,9 @@ $./idea.sh
     working directory and the entry for the command line.</p>
 
     <p style="text-align: justify;"><a href=
-    "./Bildschirmfoto-2014-02-14-um-16.36.48-e1392392322284.png">
+    "./Bildschirmfoto-2014-08-11-um-13.41.43.png">
     <img alt="" class="alignnone size-full wp-image-325" height="488" src=
-    "./Bildschirmfoto-2014-02-14-um-16.36.48-e1392392322284.png"
+    "./Bildschirmfoto-2014-08-11-um-13.41.43.png"
     width="600"></a></p>
 
     <p style="text-align: justify;">In the tab "General" unselect "Use project
@@ -228,7 +233,7 @@ $./idea.sh
     "./Bildschirmfoto-2014-02-14-um-16.44.00-e1392392804723.png"
     width="600"></a></p>
 
-    <p style="text-align: justify;">14. Prepare the signing of the app</p>
+    <p style="text-align: justify;">15. Prepare the signing of the app</p>
 
     <p style="text-align: justify;">Just click on "Build" &gt; "Generate signed
     apk..." in the menu and&nbsp;create a new keystore under the key store path
@@ -254,11 +259,6 @@ $./idea.sh
     <img alt="" class="alignnone size-full wp-image-332" height="488" src=
     "./Bildschirmfoto-2014-02-14-um-17.02.32-e1392415593408.png"
     width="600"></a></p>
-
-    <p style="text-align: justify;">15. Create the checkpointfile</p>
-    <pre>
-root@debian:~/Dokumente/bitcoinj/tools# mvn exec:java -Dexec.mainClass=com.google.bitcoin.tools.BuildCheckpoints
-</pre>
 
     <p style="text-align: justify;">16. Build the app</p>
 
