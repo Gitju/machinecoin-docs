@@ -176,7 +176,7 @@ disablewallet=0
 maxconnections=500
 bloomfilters=1 
 maxsendbuffer=256000 
-maxreceivebuffe=256000[/code]
+maxreceivebuffer=256000[/code]
 7. Forward port 40333 in your router to your Raspberry Pi and may setup a dyndns for your router. 
 
 [b]Additional notes I[/b]
