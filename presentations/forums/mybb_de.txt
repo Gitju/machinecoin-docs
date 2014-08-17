@@ -26,6 +26,7 @@
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Windows Brieftasche[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Linux Brieftasche Kompilierinstruktionen[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Brieftasche Kompilierinstruktionen[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://macpay.scryptpower.de]MACPay Online Brieftasche[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Konfiguration[/size][/font][/align]
 [align=center][code]rpcuser=<rpcusername>
