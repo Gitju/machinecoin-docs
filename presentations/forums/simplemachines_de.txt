@@ -47,7 +47,6 @@ rpcallowip=127.0.0.1
 addnode=178.62.174.65
 addnode=5.231.63.191
 addnode=5.101.97.201
-addnode=5.45.103.196
 addnode=macpi.machinecoin.de
 addnode=mine.scryptpower.de[/code][/td][/tr][/table][/center]
 
