@@ -87,7 +87,6 @@ addnode=mine.scryptpower.de
 [size=100][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size]
 [size=100][url=https://c-cex.com/?id=vote&vc=1]C-CEX[/url] (Vote!)[/size]
 [size=100][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size]
-[size=100][url=https://www.coinano.com/voting.seam]Coinano[/url] (Vote!)[/size]
 
 [size=150]IRC[/size]
 [size=100][url=http://webchat.freenode.net/?channels=#themachinecoin]irc.freenode.net:6667|6697 #themachinecoin[/url][/size]

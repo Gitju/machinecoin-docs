@@ -89,7 +89,6 @@ addnode=mine.scryptpower.de[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://c-cex.com/?id=vote&vc=1]C-CEX[/url] (Vote!)[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://www.coinano.com/voting.seam]Coinano[/url] (Vote!)[/font][/size][/center]
 
 [center][size=20pt][font=Verdana]IRC[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://webchat.freenode.net/?channels=#themachinecoin]irc.freenode.net:6667|6697 #themachinecoin[/url][/font][/size][/center]
