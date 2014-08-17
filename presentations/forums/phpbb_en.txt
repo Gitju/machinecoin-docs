@@ -42,7 +42,6 @@ rpcallowip=127.0.0.1
 #maxsendbuffer=256000 
 #maxreceivebuffe=256000
 addnode=178.62.174.65
-addnode=5.231.65.207
 addnode=5.231.63.191
 addnode=5.101.97.201
 addnode=5.45.103.196
