@@ -26,6 +26,7 @@
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Windows Wallet[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Linux Wallet Build Instructions[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org/installation.html"]Machinecoin Mac OS X Wallet Build Instructions[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://macpay.scryptpower.de"]MACPay Online Wallet service[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Config[/FONT][/SIZE]
 [CODE]rpcuser=<rpcusername>
