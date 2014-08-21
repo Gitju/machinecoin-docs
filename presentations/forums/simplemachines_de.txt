@@ -75,8 +75,8 @@ addnode=mine.scryptpower.de[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Shops[/font][/size][/center]
-[center][size=15pt][font=Verdana]Kaufe/verkaufe bei [url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url] mit MAC[/font][/size][/center]
-[center][size=15pt][font=Verdana]Kaufe/verkaufe durch [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] mit MAC überall dort wo DOGE akzeptiert wird[/font][/size][/center]
+[center][size=15pt][font=Verdana]Kaufe/Verkaufe bei [url=http://machinecointalk.org/forumdisplay.php?fid=30]Machinecointalk.org Marketplace[/url] mit MAC[/font][/size][/center]
+[center][size=15pt][font=Verdana]Kaufe/Verkaufe durch [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] mit MAC überall dort wo DOGE akzeptiert wird[/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Wechselstuben[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/font][/size][/center]
