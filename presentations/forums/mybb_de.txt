@@ -74,7 +74,7 @@ addnode=mine.scryptpower.de
 
 [align=center][font=Verdana][size=x-large]Shops[/size][/font][/align]
 [align=center][font=Verdana][size=large]Kaufe/verkaufe bei [url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url] mit MAC[/size][/font][/align]
-[align=center][font=Verdana][size=large]Kaufe/verkaufe durch [url=http://forum.machinecoin.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] mit MAC überall dort wo DOGE akzeptiert wird[/size][/font][/align]
+[align=center][font=Verdana][size=large]Kaufe/verkaufe durch [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] mit MAC überall dort wo DOGE akzeptiert wird[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Wechselstuben[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size][/font][/align]
@@ -94,7 +94,7 @@ addnode=mine.scryptpower.de
 [align=center][font=Verdana][size=x-large]Foren[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk.org[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia.org[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org]Machinecoin.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecointalk.org]Machinecointalk.org[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Kostenlose Machinecoins[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://multifaucet.tk/index.php?faucet=MAC]multifaucet.tk[/url][/size][/font][/align]
@@ -112,4 +112,4 @@ addnode=mine.scryptpower.de
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Unterstütze Machinecoin[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://forum.machinecoin.org/showthread.php?tid=126]Spende an das Machinecoin Entwicklerteam[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecointalk.org/showthread.php?tid=126]Spende an das Machinecoin Entwicklerteam[/url][/size][/font][/align]

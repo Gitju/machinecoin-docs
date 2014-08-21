@@ -73,7 +73,7 @@ addnode=mine.scryptpower.de[/CODE]
 
 [SIZE=3][FONT=Verdana]Shops[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana]Buy/sell at [URL="http://auctions.machinecoin.org/"]auctions.machinecoin.org[/URL] using MAC[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana]Buy/sell via [URL="http://forum.machinecoin.org/showthread.php?tid=222&pid=588"]Machinecoin Pipe[/URL] using MAC everywhere where DOGE is accepted[/FONT][/SIZE]
+[SIZE=2][FONT=Verdana]Buy/sell via [URL="http://machinecointalk.org/showthread.php?tid=222&pid=588"]Machinecoin Pipe[/URL] using MAC everywhere where DOGE is accepted[/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Exchanges[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://comkort.com/market/trade/mac_btc"]Comkort[/URL][/FONT][/SIZE]
@@ -93,7 +93,7 @@ addnode=mine.scryptpower.de[/CODE]
 [SIZE=3][FONT=Verdana]Forums[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://bitcointalk.org/index.php?topic=434190.0"]Bitcointalk.org[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://cryptoindia.org/showthread.php?tid=18&pid=123"]Cryptoindia.org[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://forum.machinecoin.org"]Machinecoin.org[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://machinecointalk.org"]Machinecointalk.org[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Faucets[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://multifaucet.tk/index.php?faucet=MAC"]multifaucet.tk[/URL][/FONT][/SIZE]
@@ -111,4 +111,4 @@ addnode=mine.scryptpower.de[/CODE]
 [SIZE=2][FONT=Verdana][URL="https://www.youtube.com/watch?v=1UKorRPG6sA"]"Wherever you go to. We are where you are."[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Support Machinecoin[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://forum.machinecoin.org/showthread.php?tid=126"]Donate to the Machinecoin Core Development Team[/URL][/FONT][/SIZE][/CENTER]
+[SIZE=2][FONT=Verdana][URL="http://machinecointalk.org/showthread.php?tid=126"]Donate to the Machinecoin Core Development Team[/URL][/FONT][/SIZE][/CENTER]

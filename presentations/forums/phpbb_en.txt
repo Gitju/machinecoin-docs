@@ -74,7 +74,7 @@ addnode=mine.scryptpower.de
 
 [size=150]Shops[/size]
 [size=100]Buy/sell at [url=http://auctions.machinecoin.org/]auctions.machinecoin.org[/url] using MAC[/size]
-[size=100]Buy/sell via [url=http://forum.machinecoin.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/size]
+[size=100]Buy/sell via [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/size]
 
 [size=150]Exchanges[/size]
 [size=100][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size]
@@ -94,7 +94,7 @@ addnode=mine.scryptpower.de
 [size=150]Forums[/size]
 [size=100][url=https://bitcointalk.org/index.php?topic=434190.0]Bitcointalk.org[/url][/size]
 [size=100][url=http://cryptoindia.org/showthread.php?tid=18&pid=123]Cryptoindia.org[/url][/size]
-[size=100][url=http://forum.machinecoin.org]Machinecoin.org[/url][/size]
+[size=100][url=http://machinecointalk.org]Machinecoin.org[/url][/size]
 
 [size=150]Faucets[/size]
 [size=100][url=http://multifaucet.tk/index.php?faucet=MAC]multifaucet.tk[/url][/size]
@@ -112,4 +112,4 @@ addnode=mine.scryptpower.de
 [size=100][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size]
 
 [size=150]Support Machinecoin[/size]
-[size=100][url=http://forum.machinecoin.org/showthread.php?tid=126]Donate to the Machinecoin Core Development Team[/url][/size]
+[size=100][url=http://machinecointalk.org/showthread.php?tid=126]Donate to the Machinecoin Core Development Team[/url][/size]
