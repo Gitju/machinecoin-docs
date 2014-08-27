@@ -99,7 +99,6 @@ addnode=mine.scryptpower.de[/CODE]
 [SIZE=2][FONT=Verdana][URL="http://multifaucet.tk/index.php?faucet=MAC"]multifaucet.tk[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Social[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://facebook.com/pages/Machinecoin/803260353027891"]Facebook[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://reddit.com/r/Machinecoin"]Reddit[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://twitter.com/machinecoin"]Twitter[/URL][/FONT][/SIZE]
 
