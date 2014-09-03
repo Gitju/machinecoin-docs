@@ -26,15 +26,9 @@
         <li>Start your new virtual machine, login and open up a terminal and
         enter the following commands:
             <pre>
-$apt-get update &amp;&amp; apt-get upgrade
-$apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev qrencode libqrencode-dev
-$cd ~
-$git clone https://github.com/Gitju/machinecoin
-$cd machinecoin/src/ &amp;&amp; make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1
-$strip machinecoind
-$cd ..
-$qmake machinecoin-qt.pro USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1
-$make -f Makefile
+root@desktop:~$ apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev qrencode libqrencode-dev
+root@desktop:~$ su user
+user@desktop:~$ cd ~ &amp;&amp; git clone https://github.com/Gitju/Machinecoin.git &amp;&amp; cd Machinecoin/src/ &amp;&amp; make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 &amp;&amp; strip machinecoind &amp;&amp; cd .. &amp;&amp; qmake machinecoin-qt.pro USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 &amp;&amp; make -f Makefile
 </pre>
         </li>
 
@@ -77,15 +71,9 @@ rpcallowip=127.0.0.1
         <li>Start your new virtual machine, login and open up a terminal and
         enter the following commands:
             <pre>
-$su root
-$apt-get update &amp;&amp; apt-get upgrade
-$apt-get install git build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev
-$exit
-$cd ~
-$git clone https://github.com/gitju/machinecoin.git machinecoin
-$cd machinecoin/src/
-$make -j 1 -f makefile.unix machinecoind STATIC=1 LDFLAGS="-static-libgcc -static-libstdc++"
-$strip machinecoind
+root@desktop:~$ apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev qrencode libqrencode-dev
+root@desktop:~$ su user
+user@desktop:~$ cd ~ &amp;&amp; git clone https://github.com/Gitju/Machinecoin.git &amp;&amp; cd Machinecoin/src/ &amp;&amp; make -j 1 -f makefile.unix machinecoind STATIC=1 LDFLAGS="-static-libgcc -static-libstdc++" &amp;&amp; strip machinecoind
 </pre>
         </li>
 
