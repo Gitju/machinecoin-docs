@@ -9,7 +9,7 @@
 
 <body>
     <h1>Get started with compiling the Machinecoin-Wallet and the
-    Machinecoin-Daemon on GNU/Linux Debian 7.2:</h1><br>
+    Machinecoin-Daemon on GNU/Linux Debian 7.5:</h1><br>
 
     <h2>Dynamically linked Machinecoin-Wallet and the Machinecoin-Daemon</h2><br>
 
@@ -20,14 +20,14 @@
         "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
         Pack</a>.</li>
 
-        <li>Download and import a GNU/Linux Debian 7.2 VirtualBox
+        <li>Download and import a GNU/Linux Debian 7.5 VirtualBox
         Appliance.</li>
 
         <li>Start your new virtual machine, login and open up a terminal and
         enter the following commands:
             <pre>
 $apt-get update &amp;&amp; apt-get upgrade
-$apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev qrencode libqrencode-dev
+$apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev qrencode libqrencode-dev
 $cd ~
 $git clone https://github.com/Gitju/machinecoin
 $cd machinecoin/src/ &amp;&amp; make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1
@@ -71,7 +71,7 @@ rpcallowip=127.0.0.1
         "https://www.virtualbox.org/wiki/Downloads">VirtualBox Extension
         Pack</a>.</li>
 
-        <li>Download and import a GNU/Linux Debian 7.2 VirtualBox
+        <li>Download and import a GNU/Linux Debian 7.5 VirtualBox
         Appliance.</li>
 
         <li>Start your new virtual machine, login and open up a terminal and
@@ -79,7 +79,7 @@ rpcallowip=127.0.0.1
             <pre>
 $su root
 $apt-get update &amp;&amp; apt-get upgrade
-$apt-get install git build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
+$apt-get install git build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev
 $exit
 $cd ~
 $git clone https://github.com/gitju/machinecoin.git machinecoin
