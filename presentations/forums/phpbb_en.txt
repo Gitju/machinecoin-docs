@@ -81,7 +81,6 @@ addnode=mine.scryptpower.de
 [size=100][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size]
 [size=100][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size]
 [size=100][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size]
-[size=100][url=https://www.mintpal.com/voting#MAC]MintPal[/url] (Vote!)[/size]
 [size=100][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size]
 [size=100][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size]
 [size=100][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size]
