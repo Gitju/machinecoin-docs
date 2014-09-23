@@ -83,7 +83,6 @@ addnode=mine.scryptpower.de
 [size=100][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size]
 [size=100][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size]
 [size=100][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size]
-[size=100][url=https://c-cex.com/?id=vote&vc=1]C-CEX[/url] (Vote!)[/size]
 [size=100][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size]
 
 [size=150]IRC[/size]
