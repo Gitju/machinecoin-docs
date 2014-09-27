@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Checkip Install Instructions</title>
+</head>
+
+<body>
+
+<p>In "src/net.cpp" in the function "GetMyExternalIP(...)" 
+there are several remote services defined to get the external ip.</p>
+<p>To add such a service one must:</p>
+
+<ol>
+	<li>Create a .php file on a webserver with support for php.</li>
+	<li>Add the following content to this file: <pre>&lt;?php echo $_SERVER["REMOTE_ADDR"]; ?&gt;</pre></li>
+	<li>Save that file and add the new remote service to "src/net.cpp"</li>
+</ol>
+</body>
+</html>
