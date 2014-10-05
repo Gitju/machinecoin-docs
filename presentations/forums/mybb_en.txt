@@ -72,15 +72,19 @@ addnode=mine.scryptpower.de
 [align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Shops[/size][/font][/align]
-[align=center][font=Verdana][size=large]Buy/Sell at [url=http://machinecointalk.org/forumdisplay.php?fid=30]Machinecointalk.org Marketplace[/url] using MAC[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://juunikat.jimdo.com/]Juunikat Textile Design[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinists.de]Machinists Computer Science & Engineering[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecointalk.org/forumdisplay.php?fid=30]Machinecointalk.org Marketplace[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large]Buy/Sell via [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/size][/font][/align]
+
+[align=center][font=Verdana][size=x-large]Web Wallets[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://macpay.scryptpower.de]macpay.scryptpower.de[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Exchanges[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size][/font][/align]
@@ -101,10 +105,11 @@ addnode=mine.scryptpower.de
 [align=center][font=Verdana][size=large][url=https://twitter.com/machinecoin]Twitter[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Tutorials[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw]MachineCoin-Solo-Mining-Tutorial[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=JyOtu7rv3_8]MachineCoin-Pool-Mining-Tutorial[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=QRK_yJD9fCw]MachineCoin-Pipe-Tutorial[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Trailer[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=3j4bID7RJtE]"It's not just a coin. It's a movement."[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Support Machinecoin[/size][/font][/align]

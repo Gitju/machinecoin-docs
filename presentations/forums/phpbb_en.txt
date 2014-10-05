@@ -72,15 +72,19 @@ addnode=mine.scryptpower.de
 [size=100][url=https://play.google.com/store/apps/details?id=com.miner]Crypto Miner Android[/url][/size]
 
 [size=150]Shops[/size]
-[size=100]Buy/Sell at [url=http://machinecointalk.org/forumdisplay.php?fid=30]Machinecointalk.org Marketplace[/url] using MAC[/size]
+[size=100][url=http://juunikat.jimdo.com/]Juunikat Textile Design[/url][/size]
+[size=100][url=http://machinists.de]Machinists Computer Science & Engineering[/url][/size]
+[size=100][url=http://machinecointalk.org/forumdisplay.php?fid=30]Machinecointalk.org Marketplace[/url][/size]
 [size=100]Buy/Sell via [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/size]
+
+[size=150]Web Wallets[/size]
+[size=100][url=http://macpay.scryptpower.de]macpay.scryptpower.de[/url][/size]
 
 [size=150]Exchanges[/size]
 [size=100][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size]
 [size=100][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size]
 [size=100][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size]
 [size=100][url=http://cryptotc.us/market#MAC]CryptOTC[/url][/size]
-[size=100][url=https://www.usecryptos.com/voting]useCryptos[/url] (Vote!)[/size]
 [size=100][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size]
 [size=100][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/size]
 [size=100][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/size]
@@ -101,10 +105,11 @@ addnode=mine.scryptpower.de
 [size=100][url=https://twitter.com/machinecoin]Twitter[/url][/size]
 
 [size=150]Tutorials[/size]
-[size=100][url=https://www.youtube.com/watch?v=xr0aLvntGQw&hd=1]Solo mining Machinecoin[/url][/size]
+[size=100][url=https://www.youtube.com/watch?v=xr0aLvntGQw]MachineCoin-Solo-Mining-Tutorial[/url][/size]
+[size=100][url=https://www.youtube.com/watch?v=JyOtu7rv3_8]MachineCoin-Pool-Mining-Tutorial[/url][/size]
+[size=100][url=https://www.youtube.com/watch?v=QRK_yJD9fCw]MachineCoin-Pipe-Tutorial[/url][/size]
 
 [size=150]Trailer[/size]
-[size=100][url=https://www.youtube.com/watch?v=3j4bID7RJtE]"It's not just a coin. It's a movement."[/url][/size]
 [size=100][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size]
 
 [size=150]Support Machinecoin[/size]
