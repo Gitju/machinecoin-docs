@@ -288,7 +288,137 @@ rpcallowip=127.0.0.1
         <li>Save the textfile to
         "C:\Users\<em>&lt;Username&gt;</em>\AppData\Roaming\Machinecoin\machinecoin.conf"</li>
 
-        <li>Start "machinecoin-qt.exe" with a click on your mouse</li>
+        <li>Start "machinecoin-qt.exe" with a click on your mouse to check if everything went fine.</li>
     </ol>
+    <h1>Create a single setup program out of Machinecoin-Qt and the Machinecoin-Daemon for Windows 64-bit</h1>
+    <ol>
+<li>To create a single setup program download and install <a href="http://www.jrsoftware.org/isinfo.php">Inno Setup</a>.</li>
+<li>Create a folder on your desktop and name that folder "autoinstaller".</li>
+<li>Create the subfolders "SETUP" and "daemon" inside of "autoinstaller".</li>
+<li>Copy "machinecoind.exe" into "daemon".</li>
+<li>Copy "machinecoin-qt.exe" into "autoinstaller".</li>
+<li>Copy "machinecoin-qt.exe" into "autoinstaller".</li>
+<li>Create two files inside of "autoinstaller" with the name "machinecoin.conf" and "coininstaller.iss".
+            <p><a href=
+            "Bildschirmfoto-2014-10-19-um-16.57.09-e1252637383838.png"><img alt=""
+            class="alignnone size-full wp-image-228" height="488" src=
+            "Bildschirmfoto-2014-10-19-um-16.57.09-e1252637383838.png" width=
+            "600"></a></p>
+
+</li>
+<li>Into "machinecoin.conf" insert
+            <pre>
+rpcuser=&lt;rpcusername&gt;
+rpcpassword=&lt;rpcpassword&gt;
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+</pre>
+        </li>
+<li>Into "coininstaller.iss" insert
+            <pre>
+; Machinecoin Install Script
+
+; Name for Program Files Folder, the Start Menu Items and the Uninstall Info
+#define ProgramName "Machinecoin"
+
+; The Version Number of the binaries
+#define VersionNumber "0.8.7.3"
+
+; Name of the Folder created in \Appdata\Roaming where the binaries will place the user files, including wallet, conf file, blockchain info etc.
+#define RoamingName "Machinecoin"
+
+; Name of the main QT-File
+#define QTexe "machinecoin-qt.exe"
+
+; Subfolder with additional files such as an extra folder for daemon
+; Do not include \ symbol it will be added later
+; If no subfolder is needed use #define SubDir ""
+#define SubDir "daemon"
+
+; Enter the Name of the config file you wish to include                 
+#define configfile "machinecoin.conf"
+
+
+[Setup]
+AppName={#ProgramName}
+AppVersion={#VersionNumber}
+DefaultDirName={pf32}\{#ProgramName}
+DefaultGroupName={#ProgramName}
+UninstallDisplayIcon={app}\{#QTexe}
+Compression=lzma2
+SolidCompression=yes
+OutputDir=SETUP
+
+[Files]
+Source: "*"; DestDir: "{app}"; Components: main; Excludes: "*.iss"
+Source: {#SubDir}\*; DestDir: "{app}\{#SubDir}"; Components: daemon
+Source: {#configfile}; DestDir: "{userappdata}\{#RoamingName}"; Components: config; Flags: uninsneveruninstall
+
+
+[Icons]
+Name: "{group}\{#ProgramName}"; Filename: "{app}\{#QTexe}"
+Name: "{group}\Uninstall"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\{#ProgramName}"; Filename: "{app}\{#QTexe}"; WorkingDir: "{app}"; Tasks: desktopicon/common
+Name: "{userdesktop}\{#ProgramName}"; Filename: "{app}\{#QTexe}"; WorkingDir: "{app}"; Tasks: desktopicon/user
+
+[Tasks]
+Name: desktopicon; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}" 
+Name: desktopicon\common; Description: "For all users"; GroupDescription: "Additional icons:"; Flags: exclusive 
+Name: desktopicon\user; Description: "For the current user only"; GroupDescription: "Additional icons:"; Flags: exclusive unchecked
+
+[Components]
+Name: main; Description: Main Program; Types: full compact custom; Flags: fixed
+Name: daemon; Description: Daemon files; Types: full compact custom
+Name: config; Description: A config file including nodes to synchronize with the network; Types: full custom
+
+[Code]
+var
+  ImportWalletFileName: String;
+  Targetfile: String;
+
+
+function WalletImport: Boolean;
+begin
+
+  Targetfile := ExpandConstant('{userappdata}\{#RoamingName}\wallet.dat');
+  if not FileExists(Targetfile) then 
+  begin
+    if MsgBox('No Wallet has been found. Would you like to import an existing wallet? If you skip this step a wallet will be created once {#ProgramName} is started.',mbConfirmation,MB_YESNO) = IDYES then
+        begin
+          ImportWalletFileName := '';
+          if GetOpenFileName('', ImportWalletFileName, '', 'wallet files (*.dat)|*.dat|All Files|*.*', 'dat') then
+           begin
+            if not FileExists(Targetfile) then
+              begin
+                FileCopy (expandconstant(ImportWalletFileName), Targetfile, false);
+              end
+              else
+              begin
+                MsgBox('Wallet already exists, skipping import', mbInformation, MB_OK);
+              end;
+            end;
+        end;
+  end;
+end;
+
+function NextButtonClick(CurPageID: Integer): Boolean;
+begin 
+  Result := True;
+  if CurPageID = wpFinished then
+     Result := WalletImport;
+end;
+
+[Run]
+Filename: "{app}\{#QTexe}"; Flags: postinstall skipifsilent nowait
+</pre>
+        </li>
+<li>Open "coininstaller.iss" with "Inno Setup" and click on the build button.</li>
+    </ol>
+
+    
 </body>
 </html>
