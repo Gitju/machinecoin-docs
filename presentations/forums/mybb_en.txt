@@ -82,7 +82,6 @@ addnode=mine.scryptpower.de
 
 [align=center][font=Verdana][size=x-large]Exchanges[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.bynergy.com/market/MAC]Bynergy[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/size][/font][/align]
