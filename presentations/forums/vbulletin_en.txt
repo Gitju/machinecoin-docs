@@ -71,12 +71,14 @@ addnode=mine.scryptpower.de[/CODE]
 [SIZE=2][FONT=Verdana][URL="https://play.google.com/store/apps/details?id=com.miner"]Crypto Miner Android[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Shops[/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="https://cointopay.com/M_MarketOverview.jsp"]Cointopay[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://juunikat.jimdo.com/"]Juunikat Textile Design[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinists.de"]Machinists Computer Science & Engineering[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecointalk.org/forumdisplay.php?fid=30"]Machinecointalk.org Marketplace[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana]Buy/Sell via [URL="http://machinecointalk.org/showthread.php?tid=222&pid=588"]Machinecoin Pipe[/URL] using MAC everywhere where DOGE is accepted[/FONT][/SIZE]
 
-[SIZE=3][FONT=Verdana]Paper Wallets[/FONT][/SIZE]
+[SIZE=3][FONT=Verdana]Web Wallets[/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="https://cointopay.com"]cointopay.com[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://macpay.scryptpower.de"]macpay.scryptpower.de[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Exchanges[/FONT][/SIZE]
