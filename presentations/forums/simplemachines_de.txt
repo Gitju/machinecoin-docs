@@ -61,8 +61,6 @@ addnode=mine.scryptpower.de[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=http://paper.machinecoin.org/]paper.machinecoin.org[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Minen-Förderverbände[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://machinecoin.auxmining.de/]Auxmining[/url][/font][/size][/center]
-[center][table][tr][td][code]minerd -a scrypt -o stratum+tcp://machinecoin.auxmining.de:5555 -u <user.worker> -p <password> --threads=1[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=http://p2pool.thepeeps.net:6224/]ThePeePs[/url][/font][/size][/center]
 [center][table][tr][td][code]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/code][/td][/tr][/table][/center]
 [center][size=15pt][font=Verdana][url=http://pool.scryptpower.de/]Scryptpower[/url][/font][/size][/center]
