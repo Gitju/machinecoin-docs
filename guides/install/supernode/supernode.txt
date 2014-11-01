@@ -31,8 +31,8 @@ maxreceivebuffer=256000
 [code]#other supernode
 addnode=ADDRESS[/code]
 from the list of supernodes (ADDRESSES):
+178.62.174.65
 5.231.63.191
-5.101.97.201
 macpi.machinecoin.de
 mine.scryptpower.de
 
