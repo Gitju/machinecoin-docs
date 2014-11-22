@@ -133,14 +133,14 @@ mingw32-make -f Makefile.mingw init upnpc-static
         </li>
         
         <li>Download and unpack <a href=
-        "http://prdownloads.sourceforge.net/libpng/libpng-1.6.12.tar.gz?download">libpng 1.6.12</a>
+        "http://prdownloads.sourceforge.net/libpng/libpng-1.6.14.tar.gz?download">libpng-1.6.14</a>
         to "C:\deps\".</li>
         
         <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and
-        start the compilation of libpng 1.6.12.
+        start the compilation of libpng-1.6.14.
             <pre>
 cd /c/deps/
-cd libpng-1.6.12
+cd libpng-1.6.14
 configure --disable-shared
 make
 cp .libs/libpng16.a .libs/libpng.a
@@ -148,13 +148,14 @@ cp .libs/libpng16.a .libs/libpng.a
         </li>
         
         <li>Download and unpack <a href=
-        "http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz">qrencode 3.4.3</a>
+        "http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz">qrencode-3.4.4</a>
         to "C:\deps\".</li>
         
         <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and
-         start the compilation of libpng 1.6.12.
+         start the compilation of libpng-1.6.14.
             <pre>
 cd /c/deps/
+tar xvfz qrencode-3.4.4.tar.gz
 cd qrencode-3.4.4
 configure --enable-static --disable-shared --without-tools
 make
@@ -162,9 +163,9 @@ make
 Edit Makefile like the following diff shows:
 <pre>
 - LIBS=
-+ LIBS="../libpng-1.6.12/.libs/libpng.a ../../mingw32/i686-w64-mingw32/lib/libz.a" \
-+ png_CFLAGS="-I../libpng-1.6.12" \
-+ png_LIBS="-L../libpng-1.6.12/.libs" \
++ LIBS="../libpng-1.6.14/.libs/libpng.a ../../mingw32/i686-w64-mingw32/lib/libz.a" \
++ png_CFLAGS="-I../libpng-1.6.14" \
++ png_LIBS="-L../libpng-1.6.14/.libs" \
 </pre>
 Back in your MinGW-Shell do
 <pre>
@@ -200,7 +201,7 @@ TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 + -I"c:/deps/db-4.8.30.NC/build_unix" \ 
 + -I"c:/deps/openssl-1.0.1j/include" \
 + -I"c:/deps" \
-+ -I"c:/deps/libpng-1.6.12" \
++ -I"c:/deps/libpng-1.6.14" \
 + -I"c:/deps/qrencode-3.4.4"
 
   LIBPATHS= \
@@ -210,7 +211,7 @@ TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 + -L"c:/deps/db-4.8.30.NC/build_unix" \
 + -L"c:/deps/openssl-1.0.1j" \
 + -L"c:/deps/miniupnpc" \
-+ -L"c:/deps/libpng-1.6.12/.libs" \
++ -L"c:/deps/libpng-1.6.14/.libs" \
 + -L"c:/deps/qrencode-3.4.4/.libs"
 
   # enable: ASLR, DEP and large address aware
