@@ -148,15 +148,16 @@ cp .libs/libpng16.a .libs/libpng.a
         </li>
         
         <li>Download and unpack <a href=
-        "http://fukuchi.org/works/qrencode/qrencode-3.4.3.tar.gz">qrencode 3.4.3</a>
+        "http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz">qrencode 3.4.3</a>
         to "C:\deps\".</li>
         
         <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and
          start the compilation of libpng 1.6.12.
             <pre>
 cd /c/deps/
-cd qrencode-3.4.3
+cd qrencode-3.4.4
 configure --enable-static --disable-shared --without-tools
+make
 </pre>
 Edit Makefile like the following diff shows:
 <pre>
@@ -200,7 +201,7 @@ TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 + -I"c:/deps/openssl-1.0.1j/include" \
 + -I"c:/deps" \
 + -I"c:/deps/libpng-1.6.12" \
-+ -I"c:/deps/qrencode-3.4.3"
++ -I"c:/deps/qrencode-3.4.4"
 
   LIBPATHS= \
   -L"$(CURDIR)/leveldb" \
@@ -210,7 +211,7 @@ TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
 + -L"c:/deps/openssl-1.0.1j" \
 + -L"c:/deps/miniupnpc" \
 + -L"c:/deps/libpng-1.6.12/.libs" \
-+ -L"c:/deps/qrencode-3.4.3/.libs"
++ -L"c:/deps/qrencode-3.4.4/.libs"
 
   # enable: ASLR, DEP and large address aware
 - LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware
@@ -243,8 +244,8 @@ strip machinecoind.exe
 + OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
 + MINIUPNPC_INCLUDE_PATH=C:/deps/
 + MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-+ QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
-+ QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
++ QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
++ QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 
   # on Windows: enable GCC large address aware linker flag
 - win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
