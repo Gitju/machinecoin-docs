@@ -140,6 +140,7 @@ mingw32-make -f Makefile.mingw init upnpc-static
         start the compilation of libpng-1.6.14.
             <pre>
 cd /c/deps/
+tar xvfz libpng-1.6.14.tar.gz
 cd libpng-1.6.14
 configure --disable-shared
 make
@@ -152,25 +153,25 @@ cp .libs/libpng16.a .libs/libpng.a
         to "C:\deps\".</li>
         
         <li>Start a MinGW-Shell by opening C:\MinGW\msys\1.0\msys.bat and
-         start the compilation of libpng-1.6.14.
+         start the compilation of qrencode-3.4.4.
             <pre>
 cd /c/deps/
 tar xvfz qrencode-3.4.4.tar.gz
 cd qrencode-3.4.4
 configure --enable-static --disable-shared --without-tools
-make
 </pre>
 Edit Makefile like the following diff shows:
 <pre>
 - LIBS=
 + LIBS="../libpng-1.6.14/.libs/libpng.a ../../mingw32/i686-w64-mingw32/lib/libz.a" \
+- png_CFLAGS=
 + png_CFLAGS="-I../libpng-1.6.14" \
+- png_LIBS=
 + png_LIBS="-L../libpng-1.6.14/.libs" \
 </pre>
 Back in your MinGW-Shell do
 <pre>
 make
-cp .libs/libpng16.a .libs/libpng.a
 </pre>
         </li>
 
