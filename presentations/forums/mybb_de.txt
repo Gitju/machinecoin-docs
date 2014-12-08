@@ -23,9 +23,9 @@
 
 [align=center][font=Verdana][size=x-large]Download[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://play.google.com/store/apps/details?id=de.schildbach.wallet_mac]Machinecoin Android Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Windows Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://machinecoin.org/installation.html]Machinecoin Mac OS X Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org]Machinecoin Windows Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://machinecoin.org]Machinecoin Mac OS X Brieftasche[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Konfiguration[/size][/font][/align]
 [align=center][code]rpcuser=<rpcusername>
