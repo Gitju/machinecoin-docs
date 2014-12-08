@@ -44,11 +44,13 @@ rpcallowip=127.0.0.1
 #bloomfilters=1 
 #maxsendbuffer=256000 
 #maxreceivebuffer=256000
-addnode=5.196.8.205
-addnode=5.101.97.201
 addnode=178.62.174.65
+addnode=5.101.97.201
+addnode=185.44.106.100
+addnode=84.201.32.242
 addnode=macpi.machinecoin.de
-addnode=mine.scryptpower.de[/code][/td][/tr][/table][/center]
+addnode=mine.scryptpower.de
+[/code][/td][/tr][/table][/center]
 
 [center][size=20pt][font=Verdana]Ports[/font][/size][/center]
 [center][size=15pt][font=Verdana]40332 RPC[/font][/size][/center]

@@ -33,7 +33,8 @@ addnode=ADDRESS[/code]
 from the list of supernodes (ADDRESSES):
 178.62.174.65
 5.101.97.201
-5.196.8.205
+185.44.106.100
+84.201.32.242
 macpi.machinecoin.de
 mine.scryptpower.de
 
