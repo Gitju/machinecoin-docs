@@ -92,27 +92,60 @@ This should give a result like "usbcore: registered new interface driver rtl8192
 4. Deactivate the energy save function of the EDIMAX driver
 [code]$ vi /etc/modprobe.d/8192cu.conf[/code]
 And add "options 8192cu rtw_power_mgnt=0 rtw_enusbss=0" to it.
-5. Now edit
+5. Reboot
+[code]$ reboot[/code]
+6. Check if the energy save function of the EDIMAX driver was deactivated it should return 0
+[code]$ cat /sys/module/8192cu/parameters/rtw_power_mgnt[/code] 
+7. Now edit
 [code]$ vi /etc/network/interfaces[/code]
-It depends on your WLAN settings but this works for me with WPA. 
-SSID and PASSWORD needs to be added.
+Which should look like this at the beginning:
 [code]auto lo
-iface lo inet loopback
 
-## Ethernet Schnittstelle 0
-# Beim Bootvorgang automatisch starten
+iface lo inet loopback
 iface eth0 inet dhcp
 
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp[/code]
+It depends on your WLAN settings but this works for me with WPA.
+[code]#######################
+# loopback            #
+#######################
+auto lo
+iface lo inet loopback
+#######################
+# ethernet            #
+#######################
+iface eth0 inet dhcp
+#######################
+# wifi (dhcp config)  #
+#######################
+#auto wlan0
+#allow-hotplug wlan0
+#iface wlan0 inet dhcp
+#wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+#######################
+# wifi (static config)#
+#######################
 auto wlan0
 allow-hotplug wlan0
 iface wlan0 inet static
-address 192.168.2.133
-netmask 255.255.255.0
-gateway 192.168.2.1
-wpa-ap-scan 1
-wpa-scan-ssid 1
-wpa-ssid "SSID"
-wpa-psk "PASSWORD"[/code]
+address 192.168.2.134[/code]
+
+The file "/etc/wpa_supplicant/wpa_supplicant.conf" where you then just have to configure YOURSSID and YOURPSK looks like this:
+
+[code]ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="YOURSSID"
+    proto=RSN
+    key_mgmt=WPA-PSK
+    pairwise=CCMP TKIP
+    group=CCMP TKIP
+    psk="YOURPSK"
+}[/code]
 
 [b]Expand the partition size to use the full 16GB of the SD Card[/b]
 1. Get su
