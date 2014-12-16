@@ -38,20 +38,22 @@ The default user is "pi" and password "raspberry".
 
 [b]Mount an USB Stick[/b]
 Prerequisites:
-- USB Stick formatted with FAT (FAT32)
+- USB Stick
 - Tutorial done above
 1. Get su
 [code]$ sudo su[/code]
 2. Put USB Stick into the Raspberry Pi and get the system name
 [code]$ tail -f /var/log/messages[/code]
 The part after sda: ... should give the name for me its sda1 which I'll use from now on
-3. Create a directory
+3. Format the USB Stick
+[code]$ mkfs.ext4 /dev/sda1[/code]
+4. Create a directory
 [code]$ mkdir /media/usbstick[/code]
-4. If sda1 is the name then mount it with
-[code]$ mount -t vfat -o uid=pi,gid=pi /dev/sda1 /media/usbstick/[/code]
-5. To automatically mount the drive at every start just get the UUID
+5. If sda1 is the name then mount it with
+[code]$ mount /dev/sda1 /media/usbstick/[/code]
+6. To automatically mount the drive at every start just get the UUID
 [code]$ blkid /dev/sda1[/code]
-6. And add the line "UUID=BF12-15E9 /media/usbstick/ vfat defaults,auto,umask=000,users,rw 0" to
+7. And add the line "UUID=BF12-15E9 /media/usbstick ext4 defaults 0 2" to
 [code]$ vi /etc/fstab[/code]
 while using your own UUID I used here mine its BF12-15E9
 
@@ -88,7 +90,7 @@ This should give a result like "usbcore: registered new interface driver rtl8192
 3. Check if the new network device wlan0 can be seen at
 [code]$ ifconfig[/code]
 4. Deactivate the energy save function of the EDIMAX driver
-[code]$ sudo vi /etc/modprobe.d/8192cu.conf[/code]
+[code]$ vi /etc/modprobe.d/8192cu.conf[/code]
 And add "options 8192cu rtw_power_mgnt=0 rtw_enusbss=0" to it.
 5. Now edit
 [code]$ vi /etc/network/interfaces[/code]
