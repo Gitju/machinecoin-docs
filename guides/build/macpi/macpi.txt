@@ -143,6 +143,35 @@ network={
     psk="YOURPSK"
 }[/code]
 
+8. Finally we need a fix so that the MacPi reconnects to a Wi-Fi network in case the connection was lost. For this you either can use a short script
+
+[code]#!/bin/bash                                  
+                                               
+TESTIP=192.168.2.1                           
+                                               
+ping -c4 ${TESTIP} > /dev/null               
+                                               
+if [ $? != 0 ]                               
+then                                         
+    logger -t $0 "WiFi is probably down, restarting"
+    ifdown --force wlan0                     
+    ifup wlan0                               
+else                                        
+    logger -t $0 "WiFi is probably up."           
+fi [/code]
+
+and create a new cronjob
+
+[code]	
+*/5 * * * * root /usr/local/bin/testwifi.sh
+[/code]
+
+or (and whats preferable) you can use the following method
+
+[code]$ /etc/ifplugd/action.d $ sudo mv ifupdown ifupdown.original
+$ /etc/ifplugd/action.d $ sudo cp /etc/wpa_supplicant/ifupdown.sh ./ifupdown
+$ /etc/ifplugd/action.d $ sudo reboot[/code]
+
 [b]Expand the partition size to use the full 16GB of the SD Card[/b]
 1. Get su
 [code]$ sudo su[/code]
