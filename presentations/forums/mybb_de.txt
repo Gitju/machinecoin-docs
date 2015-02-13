@@ -44,7 +44,6 @@ addnode=84.200.28.253
 addnode=185.44.106.100
 addnode=84.201.32.242
 addnode=macpi.machinecoin.de
-addnode=mine.scryptpower.de
 [/code][/align]
 
 [align=center][font=Verdana][size=x-large]Ports[/size][/font][/align]
