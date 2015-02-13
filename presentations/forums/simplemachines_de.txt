@@ -9,7 +9,6 @@
 [center][size=20pt][font=Verdana]Webseite[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://machinecoin.org]www.Machinecoin.org[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://machinecoin.de]www.Machinecoin.de[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://machinecoin.tk]www.Machinecoin.tk[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Algorithmus[/font][/size][/center]
 [center][size=15pt][font=Verdana]Scrypt[/font][/size][/center]

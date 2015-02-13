@@ -6,7 +6,6 @@
 [size=150]Website[/size]
 [size=100][url=http://www.Machinecoin.org]www.Machinecoin.org[/url][/size]
 [size=100][url=http://www.Machinecoin.de]www.Machinecoin.de[/url][/size]
-[size=100][url=http://www.Machinecoin.tk]www.Machinecoin.tk[/url][/size]
 
 [size=150]Algorithm[/size]
 [size=100]Scrypt[/size]
