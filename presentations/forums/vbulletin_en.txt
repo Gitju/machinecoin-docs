@@ -62,8 +62,6 @@ addnode=mine.scryptpower.de
 [SIZE=3][FONT=Verdana]Mining-Pools[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://p2pool.thepeeps.net:6224/"]ThePeePs[/URL][/FONT][/SIZE]
 [CODE]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/CODE]
-[SIZE=2][FONT=Verdana][URL="http://pool.scryptpower.de/"]Scryptpower[/URL][/FONT][/SIZE]
-[CODE]minerd -a scrypt -o stratum+tcp://mine.scryptpower.de:3333 -u <user.worker> -p <password> --threads=1[/CODE]
 
 [SIZE=3][FONT=Verdana]Miner[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://www.asteroidapp.com/"]Asteroid Mac OS X[/URL][/FONT][/SIZE]
@@ -74,20 +72,14 @@ addnode=mine.scryptpower.de
 [SIZE=2][FONT=Verdana][URL="https://cointopay.com/M_MarketOverview.jsp"]Cointopay[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://juunikat.jimdo.com/"]Juunikat Textile Design[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinists.de"]Machinists Computer Science & Engineering[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana]Buy/Sell via [URL="http://machinecointalk.org/showthread.php?tid=222&pid=588"]Machinecoin Pipe[/URL] using MAC everywhere where DOGE is accepted[/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Web Wallets[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://cointopay.com"]cointopay.com[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://macpay.scryptpower.de"]macpay.scryptpower.de[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Exchanges[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://comkort.com/market/trade/mac_btc"]Comkort[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://www.allcrypt.com/market?id=1057"]AllCrypt[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://www.swaphole.com/#!market/MAC/BTC"]SwapHole[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://www.bynergy.com/market/MAC"]Bynergy[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://askcoin.net/votes#MAC"]Ask Coin[/URL] (Vote!)[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://bter.com/voting#MAC"]Bter[/URL] (Vote!)[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://cryptsy.freshdesk.com/support/discussions/topics/74839"]Cryptsy[/URL] (Vote!)[/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]IRC[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://webchat.freenode.net/?channels=#themachinecoin"]irc.freenode.net:6667|6697 #themachinecoin[/URL][/FONT][/SIZE]

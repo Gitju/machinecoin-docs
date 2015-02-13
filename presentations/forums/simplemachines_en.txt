@@ -65,8 +65,6 @@ addnode=mine.scryptpower.de
 [center][size=20pt][font=Verdana]Mining-Pools[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://p2pool.thepeeps.net:6224/]ThePeePs[/url][/font][/size][/center]
 [center][table][tr][td][code]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/code][/td][/tr][/table][/center]
-[center][size=15pt][font=Verdana][url=http://pool.scryptpower.de/]Scryptpower[/url][/font][/size][/center]
-[center][table][tr][td][code]minerd -a scrypt -o stratum+tcp://mine.scryptpower.de:3333 -u <user.worker> -p <password> --threads=1[/code][/td][/tr][/table][/center]
 
 [center][size=20pt][font=Verdana]Miner[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://www.asteroidapp.com/]Asteroid Mac OS X[/url][/font][/size][/center]
@@ -77,20 +75,14 @@ addnode=mine.scryptpower.de
 [center][size=15pt][font=Verdana][url=https://cointopay.com/M_MarketOverview.jsp]Cointopay[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://juunikat.jimdo.com/]Juunikat Textile Design[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://machinists.de]Machinists Computer Science & Engineering[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana]Buy/Sell via [url=http://machinecointalk.org/showthread.php?tid=222&pid=588]Machinecoin Pipe[/url] using MAC everywhere where DOGE is accepted[/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Web Brieftaschen[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://cointopay.com]cointopay.com[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=http://macpay.scryptpower.de]macpay.scryptpower.de[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Exchanges[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://www.swaphole.com/#!market/MAC/BTC]SwapHole[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://www.bynergy.com/market/MAC]Bynergy[/url][/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://askcoin.net/votes#MAC]Ask Coin[/url] (Vote!)[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://bter.com/voting#MAC]Bter[/url] (Vote!)[/font][/size][/center]
-[center][size=15pt][font=Verdana][url=https://cryptsy.freshdesk.com/support/discussions/topics/74839]Cryptsy[/url] (Vote!)[/font][/size][/center]
 
 [center][size=20pt][font=Verdana]IRC[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://webchat.freenode.net/?channels=#themachinecoin]irc.freenode.net:6667|6697 #themachinecoin[/url][/font][/size][/center]
