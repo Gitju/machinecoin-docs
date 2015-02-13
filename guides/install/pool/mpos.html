@@ -1,0 +1,237 @@
+Hello,
+
+I want to show you how to setup a MPOS Pool for Machinecoin on a Ubuntu / Debian Server :)
+
+I will use Ubuntu 12.04 for this guide ! This guide also works on a Raspberry Pi 512MB RAM version.
+
+
+[size=large]# Install Software and Machinecoin Daemon #[/size]
+
+
+1. First of all, update your repository:
+
+[code]sudo apt-get update && sudo apt-get upgrade[/code]
+
+2. Install all necessary software for the pool.
+
+[code]sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev qt-sdk libminiupnpc-dev mysql-server git && sudo apt-get install python-twisted python-mysqldb python-dev python-setuptools python-memcache python-simplejson python-pylibmc && sudo easy_install -U distribute && sudo apt-get install memcached php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5 python-twisted python-mysqldb python-dev python-setuptools python-memcache python-simplejson python-pylibmc && sudo easy_install -U distribute
+ && sudo apache2ctl -k stop; sleep 2; sudo apache2ctl -k start[/code]
+
+[color=#FF0000]Note: You must remember the mysql password, which you will set during the installation later ![/color]
+
+3. Compile the Machinecoin Daemon
+
+[code]cd ~ && git clone https://github.com/Gitju/machinecoin && cd machinecoin/src/ && make -f makefile.unix USE_UPNP=- && cd .. && qmake "USE_UPNP=-" machinecoin-qt.pro && make -f Makefile && sudo cp ./machinecoind /usr/bin[/code]
+
+4. Create a file called machinecoin.conf 
+
+[code]sudo mkdir /home/machinecoin && sudo nano /home/machinecoin/machinecoin.conf[/code]
+
+5. Put the following content into the file: 
+
+[code]
+rpcuser=CHANGETOUSERNAME
+rpcpassword=CHANGETOAPASSWORD
+rpcport=40332
+server=1
+listen=1
+daemon=1
+gen=0
+rpcallowip=127.0.0.1
+# If you just want to run a relay and no wallet this saves RAM If you have plen$
+# RAM and bandwidth you can increase the number of connections
+maxconnections=500
+#bloomfilter
+bloomfilters=1
+#maxsendbuffer
+maxsendbuffer=256000
+#maxreceivebuffer
+maxreceivebuffer=256000
+[/code]
+
+6. Start the Machinecoin Daemon 
+
+[code]machinecoind --datadir=/home/machinecoin[/code]
+
+7. After succesfully installation of the Machinecoin Daemon we will install the stratum proxy.
+
+
+[size=large]# Stratum Proxy #[/size]
+
+
+1. Clone the source 
+
+[code]cd ~ && git clone https://github.com/Tydus/litecoin_scrypt.git && git clone https://github.com/ahmedbodi/stratum-mining.git && git clone https://github.com/ahmedbodi/stratum.git[/code]
+
+2. Compile stratum proxy
+
+[code]cd stratum-mining && git submodule init && git submodule update && cd externals/litecoin_scrypt && sudo python setup.py install && cd ~ && cd stratum-mining/externals/stratum && sudo python setup.py install && cd ~ && sudo cp stratum-mining/conf/config_sample.py stratum-mining/conf/config.pyl[/code]
+
+3. Configure the stratum proxy
+
+[code]sudo nano stratum-mining/conf/config.py[/code]
+
+3.1 Get the wallet address of the Machinecoin Daemon
+
+[code]machinecoin --datadir=/home/machinecoin getaccountaddress ""[/code]
+
+3.2 Change the following lines : 
+
+[code]
+CENTRAL_WALLET = 'YOUR_MACHINECOIN_DAEMON_MAC_ADDRESS'
+[...]
+COINDAEMON_TRUSTED_HOST = 'localhost'
+COINDAEMON_TRUSTED_PORT = 40332
+COINDAEMON_TRUSTED_USER = 'YOUR_USERNAME_FROM_THE_DAEMON_CONF'
+COINDAEMON_TRUSTED_PASSWORD = 'YOUR_PASSWORD_FROM_THE_DAEMON_CONF'
+COINDAEMON_ALGO = 'scrypt'
+COINDAEMON_Reward = 'POW'
+COINDAEMON_SHA256_TX = 'no
+[...]
+HOSTNAME = 'YOUR_DOMAIN_NAME'
+[...]
+DATABASE_DRIVER = 'mysql'
+DB_MYSQL_HOST = 'localhost'
+DB_MYSQL_DBNAME = 'mpos'
+DB_MYSQL_USER = 'root'
+DB_MYSQL_PASS = 'YOUR_MYSQL_ROOT_PASSWORD'
+[...]
+POOL_TARGET = 16
+[...]
+SOLUTION_BLOCK_HASH = True
+[/code]
+
+4. Start the stratum proxy
+
+[code]cd ~ && cd stratum-mining && twistd -y launcher.tac[/code]
+
+
+[size=large]# Install MPOS #[/size]
+
+
+1. Download MPOS
+
+[code]cd /var/www && sudo git clone git://github.com/MPOS/php-mpos.git MPOS && cd MPOS && sudo git checkout master[/code]
+
+2. Install the Mailserver
+
+[code]sudo apt-get install postfix[/code]
+
+3. Create the Database (you must enter you database root password)
+
+[code]sudo mysql -p -e "create database mpos" && sudo mysql -p mpos < sql/000_base_structure.sql[/code]
+
+5. Change the permissions of the MPOS folders
+
+[code]sudo chown -R www-data public/templates/compile public/templates/cache logs[/code]
+
+6. Configure MPOS
+
+[code]sudo cp public/include/config/global.inc.dist.php public/include/config/global.inc.php && sudo nano public/include/config/global.inc.php[/code]
+
+6.1 Change this things
+
+[code]
+$config['db']['host'] = 'localhost';
+$config['db']['user'] = 'root';
+$config['db']['pass'] = 'MYSQL_ROOT_PASSWORD';
+$config['db']['port'] = 3306;
+$config['db']['name'] = 'mpos';
+[...]
+$config['wallet']['type'] = 'http';
+$config['wallet']['host'] = 'localhost:40332';
+$config['wallet']['username'] = 'YOUR_USERNAME_FROM_THE_MACHINECOIN_CONF';
+$config['wallet']['password'] = 'YOUR_PASSWORD_FROM_THE_MACHINECOIN_CONF';
+[...]
+$config['gettingstarted']['stratumurl'] = 'localhost';
+[/code]
+
+7. Change the last file :)
+
+[code]sudo nano /usr/local/lib/python2.7/dist-packages/stratum-0.2.13-py2.7.egg/stratum/websocket_transport.py[/code]
+
+Change from : 
+
+[code]from autobahn.websocket import WebSocketServerProtocol, WebSocketServerFactory[/code]
+
+to :
+
+[code]from autobahn.twisted.websocket import WebSocketServerProtocol, WebSocketServerFactory[/code]
+
+
+[size=large]# Testing #[/size]
+
+1. Start a miner to test the pool
+
+[code]minerd -o stratum+tcp://<yourserverIP>:3333 -O YourAccount.worker:WorkerPassword -t 1[/code]
+
+You should see this: 
+
+[code]
+[2013-05-22 11:01:20] 1 miner threads started, using 'scrypt' algorithm.
+[...]
+[2013-05-22 11:01:21] thread 0: 4104 hashes, 6.38 khash/s
+[2013-05-22 11:01:34] thread 0: 137208 hashes, 10.85 khash/s
+[2013-05-22 11:01:34] accepted: 1/1 (100.00%), 10.85 khash/s (yay!!!)
+[2013-05-22 11:01:34] thread 0: 288 hashes, 10.66 khash/s
+[/code]
+
+
+[size=large]# Cronjobs #[/size]
+
+
+1. Run the cron first time
+
+[code]cd /var/www/MPOS/cronjobs && ./run-crons.sh[/code]
+
+2. Configure Cron for run the crons every minute
+
+[code]sudo crontab -e[/code]
+
+2.1 Enter this after the last line:
+
+[code]
+* * * * * /var/www/MPOS/cronjobs/run-statistics.sh
+* * * * * /var/www/MPOS/cronjobs/run-payout.sh
+* * * * * /var/www/MPOS/cronjobs/run-maintenance.sh
+* * * * * php /var/www/MPOS/cronjobs/tickerupdate.php
+* * * * * php /var/www/MPOS/cronjobs/statistics.php
+* * * * * php /var/www/MPOS/cronjobs/proportional_payout.php
+* * * * * php /var/www/MPOS/cronjobs/notifications.php
+* * * * * php /var/www/MPOS/cronjobs/findblock.php
+* * * * * php /var/www/MPOS/cronjobs/blockupdate.php
+[/code]
+
+2.2 Enter [code]sudo crontab -l[/code]
+
+You should now see the new lines :)
+
+NOW YOU CAN REGISTER YOURSELF AT THE POOL AND CONFIGURE IT WITH THE ADMIN PANEL.
+
+[color=#FF4500]NOTE: You receive no activation email if you are the first one who registering on your pool ![/color]
+
+
+
+[size=large]# List of Machinecoin Pool´s #[/size]
+
+
+[code]
+
+1. [url=http://machinecoin.auxmining.de]Auxmining[/url]
+
+2. [url=http://pool.scryptpower.de]Scryptpower[/url]
+
+3. [url=http://p2pool.thepeeps.net:6224/static/]ThePeePs[/url]
+
+
+Write down the link of your pool here and I will add it to the list :)
+
+[/code]
+
+
+[size=large]Hope you will have fun with this guide ![/size]
+
+
+Regards
+
+Nico :P
