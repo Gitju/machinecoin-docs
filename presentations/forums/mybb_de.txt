@@ -78,7 +78,7 @@ addnode=mine.scryptpower.de
 
 [align=center][font=Verdana][size=x-large]Wechselstuben[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.allcrypt.com/market?id=1059]AllCrypt[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.bynergy.com/market/MAC]Bynergy[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]IRC[/size][/font][/align]

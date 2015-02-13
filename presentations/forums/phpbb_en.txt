@@ -78,7 +78,7 @@ addnode=mine.scryptpower.de
 
 [size=150]Exchanges[/size]
 [size=100][url=https://comkort.com/market/trade/mac_btc]Comkort[/url][/size]
-[size=100][url=https://www.allcrypt.com/market?id=1057]AllCrypt[/url][/size]
+[size=100][url=https://www.allcrypt.com/market?id=1059]AllCrypt[/url][/size]
 [size=100][url=https://www.bynergy.com/market/MAC]Bynergy[/url][/size]
 
 [size=150]IRC[/size]
