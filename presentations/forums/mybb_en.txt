@@ -99,7 +99,6 @@ addnode=mine.scryptpower.de
 [align=center][font=Verdana][size=x-large]Tutorials[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw]MachineCoin-Solo-Mining-Tutorial[/url][/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=JyOtu7rv3_8]MachineCoin-Pool-Mining-Tutorial[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=QRK_yJD9fCw]MachineCoin-Pipe-Tutorial[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Trailer[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size][/font][/align]
