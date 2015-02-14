@@ -252,7 +252,11 @@ After I did the setup of the Raspberry Pi I saw that there is a Raspberry Pi con
 [code]$ raspi-config[/code]
 
 [b]Additional notes III[/b]
-It could be useful to add an autostart for the Machinecoin-Daemon and also a script for an automatically update would be cool.
+It could be useful to add an autostart for the Machinecoin-Daemon.
+1. Add a crontab for autostart
+[code]crontab -e[/code]
+Insert the following line
+[code]@reboot cd /home/pi/Machinecoin/src && machinecoind[/code]
 
 [b]Additional notes IV[/b]
 It can also be useful to install nginx and serve the Machinecoin Community Kit, Machinecoin Paperwallet, Backup of the Machinecoin Blockchain and Backup of the Machinecoin Source Code
@@ -269,3 +273,22 @@ Add "autoindex on;" to "location /"
 4. Copy the Machinecoin Community Kit, Machinecoin Paperwallet, Backup of the Machinecoin Blockchain and Backup of the Machinecoin Source Code to /usr/share/nginx/www/
 5. Tell the router to forward the port(s) 80,443 to your Raspberry Pi
 6. Setup Dyndns for the router or directly via the Raspberry Pi
+
+[b]Additional notes V[/b]
+If your ip changes every 24 hours and your router do not support a functionality to use a DynDNS-service you may can do the following trick:
+1. Get a free subdomain with DynDNS at https://www.noip.com/sign-up
+2. Download, install and start the Dynamic DNS Update Client for GNU/Linux
+[code]cd /home/pi 
+mkdir DynDNS
+cd DynDNS
+wget http://www.noip.com/client/linux/noip-duc-linux.tar.gz
+tar xf noip-duc-linux.tar.gz
+rm noip-duc-linux.tar.gz
+mv noip-* noip
+cd noip
+sudo make install
+sudo noip2[/code]
+3. Add a crontab for autostart
+[code]crontab -e[/code]
+Insert the following line
+[code]@reboot cd /home/pi/DynDNS/noip && sudo noip2[/code]
