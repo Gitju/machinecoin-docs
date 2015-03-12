@@ -59,7 +59,9 @@ addnode=macpi.machinecoin.de
 [SIZE=2][FONT=Verdana][URL="http://paper.machinecoin.org/"]paper.machinecoin.org[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Mining-Pools[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://p2pool.thepeeps.net:6224/"]ThePeePs[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://minerpools.linuxd.org/"]minerpools.linuxd.org[/URL][/FONT][/SIZE]
+[CODE]minerd -a scrypt -o stratum+tcp://minerpools.linuxd.org:3333 -u <user.worker> -p <password> --threads=1[/CODE]
+[SIZE=2][FONT=Verdana][URL="http://p2pool.thepeeps.net:6224/"]p2pool.thepeeps.net:6224[/URL][/FONT][/SIZE]
 [CODE]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/CODE]
 
 [SIZE=3][FONT=Verdana]Miner[/FONT][/SIZE]
@@ -77,7 +79,6 @@ addnode=macpi.machinecoin.de
 
 [SIZE=3][FONT=Verdana]Exchanges[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://comkort.com/market/trade/mac_btc"]Comkort[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://www.allcrypt.com/market?id=1059"]AllCrypt[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://www.bynergy.com/market/MAC"]Bynergy[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]IRC[/FONT][/SIZE]
