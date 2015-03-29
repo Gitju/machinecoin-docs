@@ -96,8 +96,8 @@ addnode=macpi.machinecoin.de
 [align=center][font=Verdana][size=large][url=https://twitter.com/machinecoin]Twitter[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Anleitungen[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw]MachineCoin-Solo-Mining-Tutorial[/url][/size][/font][/align]
-[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=JyOtu7rv3_8]MachineCoin-Pool-Mining-Tutorial[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=xr0aLvntGQw]Machinecoin-Solo-Mining-Tutorial[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=JyOtu7rv3_8]Machinecoin-Pool-Mining-Tutorial[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Trailer[/size][/font][/align]
 [align=center][font=Verdana][size=large][url=https://www.youtube.com/watch?v=1UKorRPG6sA]"Wherever you go to. We are where you are."[/url][/size][/font][/align]
