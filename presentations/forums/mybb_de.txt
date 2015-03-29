@@ -42,7 +42,6 @@ rpcallowip=127.0.0.1
 #maxreceivebuffer=256000
 addnode=84.200.28.253
 addnode=185.44.106.100
-addnode=84.201.32.242
 addnode=macpi.machinecoin.de
 [/code][/align]
 

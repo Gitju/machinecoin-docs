@@ -33,7 +33,6 @@ addnode=ADDRESS[/code]
 from the list of supernodes (ADDRESSES):
 84.200.28.253
 185.44.106.100
-84.201.32.242
 macpi.machinecoin.de
 
 5. This document is related to the Litecoin Supernode Howto: https://litecoin.org/downloads/HOWTO-SUPERNODE.txt
