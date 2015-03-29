@@ -59,7 +59,7 @@ addnode=macpi.machinecoin.de
 [align=center][font=Verdana][size=large][url=http://paper.machinecoin.org/]paper.machinecoin.org[/url][/size][/font][/align]
 
 [align=center][font=Verdana][size=x-large]Minen-Förderverbände[/size][/font][/align]
-[align=center][font=Verdana][size=large][url=http://mac.minerpools.linuxd.org:8080]minerpools.linuxd.org[/url][/size][/font][/align]
+[align=center][font=Verdana][size=large][url=http://mac.minerpools.linuxd.org:8080]minerpools.linuxd.org:8080[/url][/size][/font][/align]
 [align=center][code]minerd -a scrypt -o stratum+tcp://mac.minerpools.linuxd.org:9999 -u <user.worker> -p <password> --threads=1[/code][/align]
 [align=center][font=Verdana][size=large][url=http://p2pool.thepeeps.net:6224/]p2pool.thepeeps.net:6224[/url][/size][/font][/align]
 [align=center][code]minerd -a scrypt -o http://p2pool.thepeeps.net:6224 -u <macaddress> -p x --threads=1[/code][/align]
