@@ -76,7 +76,7 @@ addnode=macpi.machinecoin.de
 [center][size=15pt][font=Verdana][url=http://juunikat.jimdo.com/]Juunikat Textile Design[/url][/font][/size][/center]
 [center][size=15pt][font=Verdana][url=http://machinists.de]Machinists Computer Science & Engineering[/url][/font][/size][/center]
 
-[center][size=20pt][font=Verdana]Web Brieftaschen[/font][/size][/center]
+[center][size=20pt][font=Verdana]Web Wallets[/font][/size][/center]
 [center][size=15pt][font=Verdana][url=https://cointopay.com]cointopay.com[/url][/font][/size][/center]
 
 [center][size=20pt][font=Verdana]Exchanges[/font][/size][/center]
