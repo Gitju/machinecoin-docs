@@ -78,7 +78,6 @@ addnode=macpi.machinecoin.de
 
 [SIZE=3][FONT=Verdana]Exchanges[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://comkort.com/market/trade/mac_btc"]Comkort[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://www.bynergy.com/market/MAC"]Bynergy[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]IRC[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://webchat.freenode.net/?channels=#themachinecoin"]irc.freenode.net:6667|6697 #themachinecoin[/URL][/FONT][/SIZE]
