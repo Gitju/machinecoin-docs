@@ -27,32 +27,14 @@
 [size=100][url=http://machinecoin.org]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 
 [size=150]Config[/size]
-[code]rpcuser=<rpcusername>
-rpcpassword=<rpcpassword>
-rpcport=40332
-server=1
-listen=1
-daemon=1
-gen=0
-rpcallowip=127.0.0.1
-#disablewallet=1
-#maxconnections=500
-#bloomfilters=1 
-#maxsendbuffer=256000 
-#maxreceivebuffer=256000
-addnode=84.200.28.253
-addnode=185.44.106.100
-addnode=macpi.machinecoin.de
-[/code]
+[size=100][url=https://github.com/Gitju/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf]machinecoin.conf[/url][/size]
 
 [size=150]Ports[/size]
 [size=100]40332 RPC[/size]
 [size=100]40333 P2P[/size]
 
 [size=150]Blockchain Explorer[/size]
-[size=100][url=http://blockchain.machinecoin.org:8080]blockchain.machinecoin.org:8080[/url][/size]
 [size=100][url=http://multifaucet.tk/index.php?blockexplorer=MAC]multifaucet.tk/index.php?blockexplorer=MAC[/url][/size]
-[size=100][url=https://comkort.com/blockexplorer/mac]comkort.com/blockexplorer/mac[/url][/size]
 
 [size=150]Paper Wallets[/size]
 [size=100][url=http://paper.machinecoin.org/]paper.machinecoin.org[/url][/size]
