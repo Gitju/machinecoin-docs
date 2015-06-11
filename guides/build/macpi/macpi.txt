@@ -1,3 +1,13 @@
+If someone is interested in the Raspberry Pi, it would be nice to have an SD Card image for the Raspberry Pi with the Machinecoin software.
+This would lead to an enourmous number of potentially nodes to strengthen the network itself.
+
+[b]Update 12/04/2014:[/b]
+Received my first Raspberry Pi today and the first MACPi is already working now. The project will be documented at [url=https://github.com/Gitju/machinecoindocs/tree/master/guides/build/macpi]GitHub[/url] as usual.
+I guess we'll soon release an official MACPi image for all Raspberry Pi owners.
+With this you then just need a Raspberry Pi in your left hand and insert a SD Card with this image with your right hand and thats it. You then run your own MACPi without the need for any configuration.
+If you can't wait just use the following build instructions in this article and within some couple of hours you can have your own MACPi be already up and running and become a part of the Machinecoin network. 
+[attachment=59]
+
 [b]Install Raspbian to a SD Card[/b]
 Prerequisites:
 - Raspberry Pi Model B with 512 MB 
@@ -23,18 +33,26 @@ There you will see all your connected hard drives. Choose the one with the name 
 4. Type into the terminal
 [code]$ diskutil unmountDisk /dev/diskNUMBER[/code]
 while replacing NUMBER with the number of your sd card. 
-6. Type into the terminal
+5. Type into the terminal
 [code]$ sudo dd if=path_to_your_raspbian.img of=/dev/diskNUMBER bs=4m[/code]
 and wait this can take a while up to 1/2 hour
-7. Eject the SD Card
+6. Eject the SD Card
 [code]$ diskutil eject /dev/diskNUMBER[/code]
 and put it into your Raspberry Pi.
-8. Put the SD Card into Raspberry Pi, connect the Raspberry Pi with your Computer and boot
-9. Find out the IP and connect via SSH to it. 
-I used the app https://itunes.apple.com/de/app/lanscan/id472226235?mt=12 to find out the IP.
+7. Put the SD Card into Raspberry Pi, connect the Raspberry Pi with your Computer and boot
+8. Find out the IP and connect via SSH to it. 
+I used the app https://itunes.apple.com/de/app/lanscan/id472226235?mt=12 to find out the IP but you also could put the SD Card into your computer, then edit /boot/cmdline.txt
+[code]$ vi /boot/cmdline.txt[/code]
+and add a
+[code]ip=192.168.3.133[/code]
+at the end of the line.
+Then setup the ip on the computer to be 
+192.168.3.2 with a 255.255.255.0 netmask.
+Connect both with a cable, put the SD Card back into the MacPi and boot the MacPi.
 SSH Server is already installed and activated on Raspbian.
 The default user is "pi" and password "raspberry".
 [code]$ ssh -l pi IP[/code]
+
 
 [b]Mount an USB Stick[/b]
 Prerequisites:
@@ -100,49 +118,33 @@ And add "options 8192cu rtw_power_mgnt=0 rtw_enusbss=0" to it.
 [code]$ vi /etc/network/interfaces[/code]
 Which should look like this at the beginning:
 [code]auto lo
-iface lo inet loopback
 
+iface lo inet loopback
 iface eth0 inet dhcp
 
 allow-hotplug wlan0
 iface wlan0 inet manual
 wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp[/code]
-
 It depends on your WLAN settings but this works for me with WPA.
-[code]# loopback
-auto lo
+[code]auto lo
 iface lo inet loopback
 
-# ethernet (static config)
-auto eth0
-iface eth0 inet static
-address 192.168.3.134
-netmask 255.255.255.0
-broadcast 192.168.3.255
-network 192.168.3.0
-#gateway 192.168.3.1
-#dns-nameservers 192.168.3.1
-
-# wifi (static config)
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet static
-address 192.168.2.134
-netmask 255.255.255.0
-broadcast 192.168.2.255
-network 192.168.2.0
-gateway 192.168.2.1
-dns-nameservers 192.168.2.1
-wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+iface eth0 inet dhcp
 
 # wifi (dhcp config)
 #auto wlan0
 #allow-hotplug wlan0
 #iface wlan0 inet dhcp
 #wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-# default
+# wifi (static config)
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet static
+address 192.168.2.134
+netmask 255.255.255.0
+gateway 192.168.2.1
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp[/code]
 
 The file "/etc/wpa_supplicant/wpa_supplicant.conf" where you then just have to configure YOURSSID and YOURPSK looks like this:
@@ -182,7 +184,7 @@ and create a new cronjob
 */5 * * * * root /usr/local/bin/testwifi.sh
 [/code]
 
-or (and whats preferable) you can use the following method
+or you can 
 
 [code]$ /etc/ifplugd/action.d $ sudo mv ifupdown ifupdown.original
 $ /etc/ifplugd/action.d $ sudo cp /etc/wpa_supplicant/ifupdown.sh ./ifupdown
