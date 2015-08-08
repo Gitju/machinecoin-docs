@@ -127,24 +127,33 @@ iface wlan0 inet manual
 wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp[/code]
 It depends on your WLAN settings but this works for me with WPA.
-[code]auto lo
+[code]# loopback
+auto lo
 iface lo inet loopback
 
-iface eth0 inet dhcp
+# ethernet (static config)
+auto eth0
+iface eth0 inet static
+address 192.168.3.134
+netmask 255.255.255.0
+broadcast 192.168.3.255
+network 192.168.3.0
+#gateway 192.168.3.1
+#dns-nameservers 192.168.3.1
 
-# wifi (dhcp config)
-#auto wlan0
-#allow-hotplug wlan0
-#iface wlan0 inet dhcp
-#wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 # wifi (static config)
 auto wlan0
 allow-hotplug wlan0
-iface wlan0 inet static
-address 192.168.2.134
-netmask 255.255.255.0
-gateway 192.168.2.1
+iface wlan0 inet dhcp
+#iface wlan0 inet static
+#address 192.168.2.134
+#netmask 255.255.255.0
+#broadcast 192.168.2.255
+#network 192.168.2.0
+#gateway 192.168.2.1
+#dns-nameservers 192.168.2.1
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
 iface default inet dhcp[/code]
 
 The file "/etc/wpa_supplicant/wpa_supplicant.conf" where you then just have to configure YOURSSID and YOURPSK looks like this:
