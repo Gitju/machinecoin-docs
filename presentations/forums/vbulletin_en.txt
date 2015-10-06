@@ -4,7 +4,7 @@
 [SIZE=3][FONT=Arial Black]"It's not just a coin. It's a movement."[/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Website[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://machinecoin.org"]www.Machinecoin.org[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://gitju.github.io/Machinecoin.org"]www.Machinecoin.org[/URL][/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.de"]www.Machinecoin.de[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Algorithm[/FONT][/SIZE]
@@ -22,9 +22,9 @@
 
 [SIZE=3][FONT=Verdana]Download[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://play.google.com/store/apps/details?id=de.schildbach.wallet_mac"]Machinecoin Android Wallet[/URL] ([URL="https://github.com/Gitju?tab=repositories"]Source[/URL])[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://machinecoin.org"]Machinecoin Windows Wallet[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://machinecoin.org"]Machinecoin Linux Wallet Build Instructions[/URL][/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="http://machinecoin.org"]Machinecoin Mac OS X Wallet Build Instructions[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://gitju.github.io/Machinecoin.org"]Machinecoin Windows Wallet[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://gitju.github.io/Machinecoin.org"]Machinecoin Linux Wallet Build Instructions[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="http://gitju.github.io/Machinecoin.org"]Machinecoin Mac OS X Wallet Build Instructions[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Config[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana][URL="https://github.com/machinecoin-project/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf"]machinecoin.conf[/URL][/FONT][/SIZE]
