@@ -28,7 +28,7 @@
             <pre>
 root@desktop:~$ apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev qrencode libqrencode-dev
 root@desktop:~$ su user
-user@desktop:~$ cd ~ &amp;&amp; git clone https://github.com/Gitju/Machinecoin.git &amp;&amp; cd Machinecoin/src/ &amp;&amp; make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 &amp;&amp; strip machinecoind &amp;&amp; cd .. &amp;&amp; qmake machinecoin-qt.pro USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 &amp;&amp; make -f Makefile
+user@desktop:~$ cd ~ &amp;&amp; git clone https://github.com/machinecoin-project/Machinecoin.git &amp;&amp; cd Machinecoin/src/ &amp;&amp; make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 &amp;&amp; strip machinecoind &amp;&amp; cd .. &amp;&amp; qmake machinecoin-qt.pro USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 &amp;&amp; make -f Makefile
 </pre>
         </li>
 
@@ -73,7 +73,7 @@ rpcallowip=127.0.0.1
             <pre>
 root@desktop:~$ apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git libqt4-dev libqt4-core libqt4-gui libminiupnpc-dev qrencode libqrencode-dev
 root@desktop:~$ su user
-user@desktop:~$ cd ~ &amp;&amp; git clone https://github.com/Gitju/Machinecoin.git &amp;&amp; cd Machinecoin/src/ &amp;&amp; make -j 1 -f makefile.unix machinecoind STATIC=1 LDFLAGS="-static-libgcc -static-libstdc++" &amp;&amp; strip machinecoind
+user@desktop:~$ cd ~ &amp;&amp; git clone https://github.com/machinecoin-project/Machinecoin.git &amp;&amp; cd Machinecoin/src/ &amp;&amp; make -j 1 -f makefile.unix machinecoind STATIC=1 LDFLAGS="-static-libgcc -static-libstdc++" &amp;&amp; strip machinecoind
 </pre>
         </li>
 

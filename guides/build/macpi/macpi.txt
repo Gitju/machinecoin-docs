@@ -2,7 +2,7 @@ If someone is interested in the Raspberry Pi, it would be nice to have an SD Car
 This would lead to an enourmous number of potentially nodes to strengthen the network itself.
 
 [b]Update 12/04/2014:[/b]
-Received my first Raspberry Pi today and the first MACPi is already working now. The project will be documented at [url=https://github.com/Gitju/machinecoindocs/tree/master/guides/build/macpi]GitHub[/url] as usual.
+Received my first Raspberry Pi today and the first MACPi is already working now. The project will be documented at [url=https://github.com/machinecoin-project/machinecoindocs/tree/master/guides/build/macpi]GitHub[/url] as usual.
 I guess we'll soon release an official MACPi image for all Raspberry Pi owners.
 With this you then just need a Raspberry Pi in your left hand and insert a SD Card with this image with your right hand and thats it. You then run your own MACPi without the need for any configuration.
 If you can't wait just use the following build instructions in this article and within some couple of hours you can have your own MACPi be already up and running and become a part of the Machinecoin network. 
@@ -247,7 +247,7 @@ Then fdisk wants the last sector choose here the value that is shown at "default
 3. Exit to su to user
 [code]$ exit[/code]
 4. Compile
-[code]$ cd ~ && git clone https://github.com/Gitju/machinecoin && cd machinecoin/src/ && make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 && strip machinecoind[/code]
+[code]$ cd ~ && git clone https://github.com/machinecoin-project/machinecoin && cd machinecoin/src/ && make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 && strip machinecoind[/code]
 5. Test the Machinecoin-Daemon
 [code]$ ./machinecoind  [/code]
 6. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 

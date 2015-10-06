@@ -14,7 +14,7 @@ grant all on abe.* to abe;
 quit[/code]
 
 4. Change to a normal user on your host and clone the repository of abe:
-[code]git clone https://github.com/Gitju/Machinecoin-Blockchainexplorer-Abe.git abe[/code]
+[code]git clone https://github.com/machinecoin-project/Machinecoin-Blockchainexplorer-Abe.git abe[/code]
 
 5. Make a copy of abe.conf
 [code]cd abe/

@@ -27,7 +27,7 @@
 [size=100][url=http://machinecoin.org]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 
 [size=150]Config[/size]
-[size=100][url=https://github.com/Gitju/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf]machinecoin.conf[/url][/size]
+[size=100][url=https://github.com/machinecoin-project/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf]machinecoin.conf[/url][/size]
 
 [size=150]Ports[/size]
 [size=100]40332 RPC[/size]

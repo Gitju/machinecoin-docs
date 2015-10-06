@@ -27,7 +27,7 @@
 [SIZE=2][FONT=Verdana][URL="http://machinecoin.org"]Machinecoin Mac OS X Wallet Build Instructions[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Config[/FONT][/SIZE]
-[SIZE=2][FONT=Verdana][URL="https://github.com/Gitju/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf"]machinecoin.conf[/URL][/FONT][/SIZE]
+[SIZE=2][FONT=Verdana][URL="https://github.com/machinecoin-project/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf"]machinecoin.conf[/URL][/FONT][/SIZE]
 
 [SIZE=3][FONT=Verdana]Ports[/FONT][/SIZE]
 [SIZE=2][FONT=Verdana]40332 RPC[/FONT][/SIZE]
