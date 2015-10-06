@@ -22,9 +22,9 @@
 
 [size=150]Download[/size]
 [size=100][url=https://play.google.com/store/apps/details?id=de.schildbach.wallet_mac]Machinecoin Android Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
-[size=100][url=http://gitju.github.io/Machinecoin.org]Machinecoin Windows Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
-[size=100][url=http://gitju.github.io/Machinecoin.org]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
-[size=100][url=http://gitju.github.io/Machinecoin.org]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=http://machinecoin-project.github.io/machinecoin.org]Machinecoin Windows Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=http://machinecoin-project.github.io/machinecoin.org]Machinecoin Linux Wallet Build Instructions[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
+[size=100][url=http://machinecoin-project.github.io/machinecoin.org]Machinecoin Mac OS X Wallet[/url] ([url=https://github.com/Gitju?tab=repositories]Source[/url])[/size]
 
 [size=150]Config[/size]
 [size=100][url=https://github.com/machinecoin-project/Machinecoin-Docs/blob/master/guides/use/configfile/machinecoin.conf]machinecoin.conf[/url][/size]
