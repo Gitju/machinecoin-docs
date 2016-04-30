@@ -1,19 +1,6 @@
-If someone is interested in the Raspberry Pi, it would be nice to have an SD Card image for the Raspberry Pi with the Machinecoin software.
-This would lead to an enourmous number of potentially nodes to strengthen the network itself.
-
-[b]Update 12/04/2014:[/b]
-Received my first Raspberry Pi today and the first MACPi is already working now. The project will be documented at [url=https://github.com/machinecoin-project/machinecoindocs/tree/master/guides/build/macpi]GitHub[/url] as usual.
-I guess we'll soon release an official MACPi image for all Raspberry Pi owners.
-With this you then just need a Raspberry Pi in your left hand and insert a SD Card with this image with your right hand and thats it. You then run your own MACPi without the need for any configuration.
-If you can't wait just use the following build instructions in this article and within some couple of hours you can have your own MACPi be already up and running and become a part of the Machinecoin network. 
-[attachment=59]
-
-[b]Install Raspbian to a SD Card[/b]
-Prerequisites:
-- Raspberry Pi Model B with 512 MB 
-  Heard the "made in UK" ones got the best quality so I bought a bundle
-  which consists of a UK version of the Raspberry Pi Model B from Amazon http://www.amazon.de/gp/product/B00IHF024E/
-- SDHC Card with 16GB
+[b]Prerequisites to install Raspbian to a SD Card[/b]
+- Raspberry Pi Model B or higher with at least 512 MB 
+- SDHC Card with at least 16GB
   Should be compatible for the Raspberry Pi and class 10 for best results.
   I have used SanDisk SDSDU-016G-U46 Ultra SDHC Class 10.
 - Network cable
@@ -22,30 +9,28 @@ Prerequisites:
 - Internet connection
   The Raspberry Pi should be connected to the internet. 
 1. Download Raspian SD Card image from
-http://www.raspberrypi.org/downloads/
+https://www.raspberrypi.org/downloads/
 and follow the given instructions located at 
-http://www.raspberrypi.org/documentation/installation/installing-images/README.md
-In the next few steps I'll show you this for Mac OS X 10.9.2 feel free to add instructions for other systems here as well.
-2. Format the SD Card with the hard drive diagnose utility using FAT (FAT32) and give the SD Card the name "RaspberryPi" while doing this.
-3. Open up a terminal and type in
-[code]$ diskutil list[/code]
-There you will see all your connected hard drives. Choose the one with the name "RaspberryPi" and look for its identifier. For me thats disk1 and ensure you got the right one otherwise you can completely delete your system hard drive.
-4. Type into the terminal
-[code]$ diskutil unmountDisk /dev/diskNUMBER[/code]
-while replacing NUMBER with the number of your sd card. 
-5. Type into the terminal
-[code]$ sudo dd if=path_to_your_raspbian.img of=/dev/diskNUMBER bs=4m[/code]
+https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+In the next few steps I'll show you this for GNU/Linux Debian. 
+Feel free to add instructions for other systems here as well.
+2. Format the SD Card with GParted
+and get to know the location of your SD Card.
+This is something like /dev/sdCHAR but you really need to be sure.
+If you are not sure you may format your entire hard drive later.
+3. Type into the terminal
+[code]$ sudo dd if=path_to_your_raspbian.img of=/dev/sdCHAR bs=4m[/code]
 and wait this can take a while up to 1/2 hour
-6. Eject the SD Card
-[code]$ diskutil eject /dev/diskNUMBER[/code]
+4. Eject the SD Card
+[code]$ sync[/code]
 and put it into your Raspberry Pi.
-7. Put the SD Card into Raspberry Pi, connect the Raspberry Pi with your Computer and boot
-8. Find out the IP and connect via SSH to it. 
-I used the app https://itunes.apple.com/de/app/lanscan/id472226235?mt=12 to find out the IP but you also could put the SD Card into your computer, then edit /boot/cmdline.txt
+5. Put the SD Card into Raspberry Pi, connect the Raspberry Pi with your Computer and boot
+6. Find out the IP and connect via SSH to it. 
+To find out the IP you also could put the SD Card into your computer, then edit /boot/cmdline.txt
 [code]$ vi /boot/cmdline.txt[/code]
 and add a
 [code]ip=192.168.3.133[/code]
-at the end of the line.
+at the end of the line for example.
 Then setup the ip on the computer to be 
 192.168.3.2 with a 255.255.255.0 netmask.
 Connect both with a cable, put the SD Card back into the MacPi and boot the MacPi.
