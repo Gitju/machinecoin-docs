@@ -39,7 +39,7 @@ The default user is "pi" and password "raspberry".
 [code]$ ssh -l pi IP[/code]
 
 [b]System update[/b]
-[code]$ sudo apt-get update && sudo apt-get upgrade[/code]
+[code]$ sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade[/code]
 
 [b]Mount an USB Stick[/b]
 Prerequisites:
@@ -68,14 +68,14 @@ Prerequisites:
 1. Get su
 [code]$ sudo su[/code]
 2. Do
-[code]$ vi /etc/dphys-swapfile [/code]
+[code]$ vi /etc/dphys-swapfile[/code]
 and add
 CONF_SWAPFILE=/media/usbstick/swap
-CONF_SWAPSIZE=1024
+CONF_SWAPSIZE=1536
 to it
 3. Do some magic
 [code]$ dphys-swapfile swapoff
-$ dd if=/dev/zero of=/media/usbstick/swap bs=1M count=1024
+$ dd if=/dev/zero of=/media/usbstick/swap bs=1M count=1536
 $ mkswap /media/usbstick/swap
 $ dphys-swapfile setup
 $ dphys-swapfile swapon[/code]
@@ -233,14 +233,51 @@ Then fdisk wants the last sector choose here the value that is shown at "default
 1. Get su
 [code]$ sudo su[/code]
 2. Install Libs
-[code]$ apt-get update && apt-get upgrade && apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev qrencode libqrencode-dev[/code]
-3. Exit to su to user
-[code]$ exit[/code]
-4. Compile
-[code]$ cd ~ && git clone https://github.com/machinecoin-project/machinecoin-core && cd machinecoin-core/src/ && make -f makefile.unix USE_IPV6=1 USE_UPNP=1 USE_QRCODE=1 && strip machinecoind[/code]
-5. Test the Machinecoin-Daemon
-[code]$ ./machinecoind  [/code]
-6. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 
+[code]$ apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev[/code]
+
+[code]$ apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler[/code]
+
+[code]$ apt-get install libminiupnpc-dev libqrencode-dev[/code]
+
+[code]# Get db4.8 source, compile and install
+$ wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
+$ tar -xzvf db-4.8.30.NC.tar.gz
+$ cd db-4.8.30.NC/build_unix
+$ ../dist/configure --enable-cxx
+$ make
+$ make install
+
+# Tell your system where to find db4.8
+$ MACHINECOIN_ROOT=$(pwd)
+
+# Pick some path to install BDB to, here we create a directory within the machinecoin directory
+$ BDB_PREFIX="${MACHINECOIN_ROOT}/db4"
+$ mkdir -p $BDB_PREFIX
+
+# Fetch the source and verify that it is not tampered with
+$ wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
+$ echo '12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  db-4.8.30.NC.tar.gz' | sha256sum -c
+# -> db-4.8.30.NC.tar.gz: OK
+$ tar -xzvf db-4.8.30.NC.tar.gz
+
+# Build the library and install to our prefix
+$ cd db-4.8.30.NC/build_unix/
+#  Note: Do a static build so that it can be embedded into the exectuable, instead of having to find a .so at runtime
+$ ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
+$ make install
+
+# Configure Machinecoin Core to use our own-built instance of BDB
+cd $MACHINECOIN_ROOT
+$ ./configure --with-gui=qt5 LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
+[/code]
+
+3. Compile
+[code]$ make[/code]
+
+4. Test the Machinecoin-Daemon
+[code]$ ./machinecoind[/code]
+
+5. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 
 [code]rpcuser=<rpcusername>
 rpcpassword=<rpcpassword>
 rpcport=40332
@@ -250,11 +287,12 @@ daemon=1
 gen=0
 rpcallowip=127.0.0.1
 disablewallet=0
-maxconnections=500
+maxconnections=8
 bloomfilters=1 
 maxsendbuffer=256000 
 maxreceivebuffer=256000[/code]
-7. Forward port 40333 in your router to your Raspberry Pi and may setup a dyndns for your router. 
+
+6. Forward port 40333 in your router to your Raspberry Pi and may setup a dyndns for your router. 
 
 [b]Additional notes I[/b]
 If the Raspberry Pi is reachable from outside change the default password for the user "pi". 
