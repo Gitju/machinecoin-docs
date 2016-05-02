@@ -269,6 +269,7 @@ $ make install[/code]
 6. Compile Machinecoin
 [code]# Configure Machinecoin Core to use our own-built instance of BDB
 $ cd $MACHINECOIN_ROOT
+$ ./autogen.sh
 $ ./configure --with-gui=qt5 LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 [/code]
 
