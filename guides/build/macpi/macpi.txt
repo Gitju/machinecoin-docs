@@ -239,14 +239,14 @@ Then fdisk wants the last sector choose here the value that is shown at "default
 
 [code]$ apt-get install libminiupnpc-dev libqrencode-dev[/code]
 
-[code]# Get db4.8 source, compile and install
-$ wget http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz
-$ tar -xzvf db-4.8.30.NC.tar.gz
-$ cd db-4.8.30.NC/build_unix
-$ ../dist/configure --enable-cxx
-$ make
-$ make install
+3. Exit su
+[code]$ exit[/code]
 
+4. Clone the repository
+[code]cd ~ && git clone https://github.com/machinecoin-project/machinecoin-core && cd machinecoin-core/[/code]
+
+5. Compile db4.8
+[code]
 # Tell your system where to find db4.8
 $ MACHINECOIN_ROOT=$(pwd)
 
@@ -264,14 +264,15 @@ $ tar -xzvf db-4.8.30.NC.tar.gz
 $ cd db-4.8.30.NC/build_unix/
 #  Note: Do a static build so that it can be embedded into the exectuable, instead of having to find a .so at runtime
 $ ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
-$ make install
+$ make install[/code]
 
-# Configure Machinecoin Core to use our own-built instance of BDB
-cd $MACHINECOIN_ROOT
+6. Compile Machinecoin
+[code]# Configure Machinecoin Core to use our own-built instance of BDB
+$ cd $MACHINECOIN_ROOT
 $ ./configure --with-gui=qt5 LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 [/code]
 
-3. Compile
+# Compile
 [code]$ make[/code]
 
 4. Test the Machinecoin-Daemon
