@@ -276,6 +276,9 @@ $ ./configure --with-gui=qt5 LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PR
 # Compile
 [code]$ make[/code]
 
+# Strip
+strip src/machinecoin{d,-cli}
+
 4. Test the Machinecoin-Daemon
 [code]$ ./machinecoind[/code]
 
