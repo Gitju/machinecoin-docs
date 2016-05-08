@@ -282,7 +282,19 @@ strip src/machinecoin{d,-cli}
 4. Test the Machinecoin-Daemon
 [code]$ ./machinecoind[/code]
 
-5. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 
+5. Test the Machinecoin-Qt
+[code]$ ./qt/machinecoin-qt[/code]
+
+In case you see something like:
+"libEGL warning: DRI2: failed to authenticate"
+
+then just:
+$ sudo ln -fs /opt/vc/lib/libEGL.so /usr/lib/arm-linux-gnueabihf/libEGL.so
+$ sudo ln -fs /opt/vc/lib/libEGL.so /usr/lib/arm-linux-gnueabihf/libEGL.so.1
+$ sudo ln -fs /opt/vc/lib/libGLESv2.so /usr/lib/arm-linux-gnueabihf/libGLESv2.so
+$ sudo ln -fs /opt/vc/lib/libGLESv2.so /usr/lib/arm-linux-gnueabihf/libGLESv2.so.2
+
+6. Create a config-file, change <rpcusername> and <rpcpassword>, save the config-file 
 [code]rpcuser=<rpcusername>
 rpcpassword=<rpcpassword>
 rpcport=40332
@@ -297,7 +309,7 @@ bloomfilters=1
 maxsendbuffer=256000 
 maxreceivebuffer=256000[/code]
 
-6. Forward port 40333 in your router to your Raspberry Pi and may setup a dyndns for your router. 
+7. Forward port 40333 in your router to your Raspberry Pi and may setup a dyndns for your router. 
 
 [b]Additional notes I[/b]
 If the Raspberry Pi is reachable from outside change the default password for the user "pi". 
