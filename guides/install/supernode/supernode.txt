@@ -31,7 +31,7 @@ maxreceivebuffer=256000
 [code]#other supernode
 addnode=ADDRESS[/code]
 from the list of supernodes (ADDRESSES):
-46.101.203.227
-185.44.106.100
+5.230.146.183
+159.203.40.228
 
 5. This document is related to the Litecoin Supernode Howto: https://litecoin.org/downloads/HOWTO-SUPERNODE.txt
